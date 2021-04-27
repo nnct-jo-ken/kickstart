@@ -21,3 +21,15 @@ ex.) $HOME/
 ![](../images/mkdir.png)
 
 ﾆｲﾁｬﾝ「**`mkdir`は`make directory`の略と理解すると覚えやすいよ。**」  
+
+### cdコマンド
+弟「ねぇねぇﾆｲﾁｬﾝ」  
+弟「今作ったディレクトリに移動したいんだけど・・・」  
+ﾆｲﾁｬﾝ「それなら`cd`コマンド打てば移動できるよ」  
+ﾆｲﾁｬﾝ「`prac-kickstart`に移動しよう！」  
+
+ex.) $Home/
+
+![](../images/cd.png)
+
+ﾆｲﾁｬﾝ「**`cd`は`change directory`の略と理解すると覚えやすいよ。**」  
