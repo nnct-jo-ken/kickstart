@@ -31,3 +31,5 @@
   - [Scratchの命令に置き換えると？](ProcessingOther/scratch.md)
 
 - [サンプルプログラム](ProcessingSample/all.md)
+
+- [Git/GitHub講座](./git/README.md)
