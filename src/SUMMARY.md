@@ -18,6 +18,6 @@
   - [Chapter 3:ボールを動かそう](ProcessingGame/Game_03.md)
 
 - [発展](ProcessingChallenge/README.md)
-  - [発展 1:円運動](ProcessingChallenge/polygon.md)
+  - [発展 1:円運動](ProcessingChallenge/circle.md)
   - [発展 2:平方根](ProcessingChallenge/sqrt.md)
-  - [発展 3:誤差を回避](ProcessingChallenge/gosa.md)
+  - [発展 3:誤差を回避](ProcessingChallenge/error.md)
