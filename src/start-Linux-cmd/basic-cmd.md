@@ -134,5 +134,60 @@ ex.) $HOME/prac-kickstart
 ﾆｲﾁｬﾝ「`ctf-ken.txt`から`jo-ken.txt`に変更されたことがわかるね」  
 弟「これで`ctf-ken.txt`をわざわざ削除して作り直さなくてもいいから手間が省けた！」  
 
+### echoコマンド
+弟「ねぇねぇﾆｲﾁｬﾝ」  
+弟「現在使用されてる`SHELL`が何か知りたいんだけど・・・」  
+> shellとはユーザーの入力をコンピュータに伝えるプログラム
+
+ﾆｲﾁｬﾝ「（いきなり、シェル？！）」  
+ﾆｲﾁｬﾝ「（聞かれたからには答えよう）」  
+ﾆｲﾁｬﾝ「`echo`コマンドというのを使って表示させられるよ！」  
+
+ex.)
+
+```bash
+echo $SHELL
+```
+
+ﾆｲﾁｬﾝ「今回は`echo`コマンドが大事だよ！」  
+ﾆｲﾁｬﾝ「`echo`を使うことで、プログラミング言語の`print`関数に相当するよ（言語による）」  
+弟「（・・・）」  
+
+ﾆｲﾁｬﾝ「`echo`を使ってfileに書き込むことも出来るんだよ」  
+ﾆｲﾁｬﾝ「やってみよう！」  
+> 一つ下のdirectoryに移動して、`echo`という名前のdirectoryを作ろう。  
+> そこに、`written.txt`ファイルを作ろう。(PATH: $HOME/prac-kickstart/echo/written.txt)
+
+ﾆｲﾁｬﾝ「"Programming is so fun"という文字列を書き込んでみよう」  
+
+ex.) $HOME/prac-kickstart/echo
+
+![](../images/echo.png)
+
+ﾆｲﾁｬﾝ「`echo "Programming is so fun" > written.txt`を分解すると」  
+ﾆｲﾁｬﾝ「`echo`, `"Programming is so fun"`, `>`, `written.txt`に分けられて、」  
+ﾆｲﾁｬﾝ「`>`が表す意味は左の文字列(`"Programming is so fun"`)を
+      `written.txt`に書き込むよということです」  
+
+ﾆｲﾁｬﾝ「`>`は上書きなので、これを使うときは誤って上書きしてしまわないように気をつけよう」  
+弟「はーーい」
+
+|記号|機能          |
+|----|--------------|
+|\>  |上書き        |
+|\>> |追加で書き込み|
+
+（余談）
+`SHELL`にはたくさんの種類がある。  
+有名なのは、`/bin/bash`、`/bin/zsh`、`/bin/fish`あたり  
+
+それぞれ、設定ファイルというものがある（`.bash_profile`, `.zshrc`...etc）  
+私は、設定ファイルの記述をミスって保存(正確には`source`)してしまい
+`terminal(iTerm2)`が起動しなくなってしまったことがある。  
+> このような場合、iTerm2は、立ち上げるたびに強制終了になってしまう
+
+macOSには標準の`terminal`が用意されているので、そちらで一旦別のSHELLに変えて、
+間違って記述した部分を削除して`iTerm2`を起動させることができたことがある。  
+
 
 [^1]: typoとは「打ち間違い」のこと
