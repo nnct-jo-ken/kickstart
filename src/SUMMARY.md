@@ -7,9 +7,10 @@
   - [Chapter 5:分岐処理](Processing/chapter_05.md)
   - [Chapter 6:繰り返し処理](Processing/chapter_06.md)
   - [Chapter 7:複雑な処理](Processing/chapter_07.md)
-  - [Chapter 8:配列](Processing/chapter_08.md)
-  - [Chapter 9:クラスとメンバ](Processing/chapter_09.md)
-  - [Chapter 10:](Processing/chapter_10.md)
+  - [Chapter 8:関数を作る](Processing/chapter_08.md)
+  - [Chapter 9:配列](Processing/chapter_09.md)
+  - [Chapter 10:クラスとメンバ](Processing/chapter_10.md)
+  - [Chapter 11:](Processing/chapter_11.md)
 
 - [ゲームを作ってみよう](ProcessingGame/README.md)
   - [Chapter 1:設計を考えよう](ProcessingGame/Game_01.md)
