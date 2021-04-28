@@ -113,8 +113,8 @@ ex.) $HOME/prac-kickstart/
 弟「`aft-move`directoryに`move.txt`を移動させたいんだけど・・・」  
 ﾆｲﾁｬﾝ「ファイルを移動させるなら`mv`コマンドというのがあるからそれを使おう！」  
 
-> $HOME/prac-kickstart下に[mkdirコマンド](##mkdirコマンド)と
-> [touchコマンド](##touchコマンド)を使って`aft-move`というdirectoryと
+> $HOME/prac-kickstart下に[mkdirコマンド](#mkdirコマンド)と
+> [touchコマンド](#touchコマンド)を使って`aft-move`というdirectoryと
 > `move.txt`というファイルを作ろう(PATHは、$HOME/prac-kickstart/aft-move ,
 > $HOME/prac-kickstart/move.txtとなっていれば良い)
 
@@ -135,11 +135,11 @@ ex.) $HOME/prac-kickstart
 ﾆｲﾁｬﾝ「`mv`コマンドは、ファイルの移動だけじゃなくて、**ファイル名を変更することが可能**だよ」  
 弟「どういうこと・・・？」  
 ﾆｲﾁｬﾝ「例えば、`aft-move/`に移動して、`jo-ken.txt`を作りたかったのに`ctf-ken.txt`を作ってしまったとする」  
-ﾆｲﾁｬﾝ「[rmコマンド](##rmコマンド)では一回削除して作り直していたけど、少し手間だよね。」  
+ﾆｲﾁｬﾝ「[rmコマンド](#rmコマンド)では一回削除して作り直していたけど、少し手間だよね。」  
 ﾆｲﾁｬﾝ「そこで、`mv`コマンドを使うんだ」  
 
 > 実際は、どのdirectoryでやってもok。  
-> また、atf-move/にctf-ken.txtを作ろう。（参照[touchコマンド](##touchコマンド)）
+> また、atf-move/にctf-ken.txtを作ろう。（参照[touchコマンド](#touchコマンド)）
 
 ex.) $HOME/prac-kickstart
 
@@ -233,7 +233,7 @@ ex.) $HOME/prac-kickstart/echo
 |\>  |上書き        |
 |\>> |追加で書き込み|
 
-（余談）
+（余談）  
 `SHELL`にはたくさんの種類がある。  
 有名なのは、`/bin/bash`、`/bin/zsh`、`/bin/fish`あたり  
 
