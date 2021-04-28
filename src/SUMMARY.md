@@ -19,5 +19,8 @@
 
 - [発展](ProcessingChallenge/README.md)
   - [発展 1:円運動](ProcessingChallenge/circle.md)
-  - [発展 2:平方根](ProcessingChallenge/sqrt.md)
-  - [発展 3:誤差を回避](ProcessingChallenge/error.md)
+
+- [補足資料](ProcessingOther/README.md)
+  - [コンピュータ上での色の表現](ProcessingOther/color.md)
+  - [変数の詳しい話](ProcessingOther/var.md)
+  - [演算子](ProcessingOther/operator.md)
