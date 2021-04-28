@@ -3,7 +3,7 @@
 ## Processingって何
 絵が描けるアプリケーションです．コードで絵を描きます．
 
-![icon](img/pro.png "icon")
+![icon](img/Pro.png "icon")
 
 ## なんでProcessingなの
 C言語をコマンドプロンプトの文字だけの真っ黒な画面でやるよりも楽しいしわかりやすいと思うからです．
