@@ -152,6 +152,7 @@ ex.) $HOME/prac-kickstart
 ﾆｲﾁｬﾝ「`jo-ken.txt`を任意のエディタで開いて`Hello, World!`と入れてみよう」  
 
 <br>
+
 弟「これで`ctf-ken.txt`をわざわざ削除して作り直さなくてもいいから手間が省けるね！」  
 
 ## catコマンド
