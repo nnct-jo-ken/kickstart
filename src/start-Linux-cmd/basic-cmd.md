@@ -142,6 +142,38 @@ ex.) $HOME/prac-kickstart
 <br>
 弟「これで`ctf-ken.txt`をわざわざ削除して作り直さなくてもいいから手間が省けるね！」  
 
+### catコマンド
+弟「ねぇねぇﾆｲﾁｬﾝ」  
+弟「そういえば、さっき`jo-ken.txt`に`Hello, World!`を書き込んだけど」  
+弟「本当に書き込まれてるのか確認したいな・・・」  
+
+弟「**エディタを開かずに**書き込まれているか確認できない？」  
+
+ﾆｲﾁｬﾝ「できるよ！！」  
+ﾆｲﾁｬﾝ「`cat`コマンドというのがあるんだよ」  
+
+ex.) $HOME/prac-kickstart/aft-move/
+
+![](../images/cat.png)
+
+> Usage: cat: cat <表示したいfile名>  
+
+ﾆｲﾁｬﾝ「`cat`は`catenate`（連結を意味する）の略だと理解すると覚えやすいよ」  
+ﾆｲﾁｬﾝ「`cat`は`catenate`の略なので他にも以下のような使い方ができるよ！」
+
+> aft-move/の`move.txt`に任意の文字列: ex.) `This file is move.txt`を書き込んでおこう
+
+ex.) $HOME/prac-kickstart/aft-move/
+
+![](../images/cat2.png)
+
+> Usage: cat: cat <表示したいfile名1> <表示したいfile名2>
+
+ﾆｲﾁｬﾝ「このように、連結して表示させることもできるんだよ！」  
+
+ﾆｲﾁｬﾝ「これで、ファイルの中に何が書き込まれているかわかったね！」  
+
+
 ### echoコマンド
 弟「ねぇねぇﾆｲﾁｬﾝ」  
 弟「現在使用されてる`SHELL`が何か知りたいんだけど・・・」  
