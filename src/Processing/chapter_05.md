@@ -149,5 +149,38 @@ void draw(){
 
 ```
 
-## else,elseif
-elseは英語
+## else,else if
+elseは文字通りそうでないときの処理を書きます．
+
+```java
+int score=74;
+if(score<60){
+    print("不可");
+}else{
+    print("合格");
+}
+```
+
+次の2つのプログラムを比較してみましょう
+
+```java
+int score=74;
+if(score<60){
+    print("不可");
+    score=60;
+}else{
+    print("合格");
+}
+```
+
+```java
+int score=74;
+if(score<60){
+    print("不可");
+    score=60;
+}
+if(score>=60){
+    print("合格");
+}
+```
+
