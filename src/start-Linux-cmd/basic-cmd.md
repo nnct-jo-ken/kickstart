@@ -137,7 +137,10 @@ ex.) $HOME/prac-kickstart
 > Usage: mv: mv <変更前のfile名> <変更後のfile名>  
 
 ﾆｲﾁｬﾝ「`ctf-ken.txt`から`jo-ken.txt`に変更されたことがわかるね」  
-弟「これで`ctf-ken.txt`をわざわざ削除して作り直さなくてもいいから手間が省けた！」  
+ﾆｲﾁｬﾝ「`jo-ken.txt`を任意のエディタで開いて`Hello, World!`と入れてみよう」  
+
+<br>
+弟「これで`ctf-ken.txt`をわざわざ削除して作り直さなくてもいいから手間が省けるね！」  
 
 ### echoコマンド
 弟「ねぇねぇﾆｲﾁｬﾝ」  
