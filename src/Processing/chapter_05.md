@@ -100,11 +100,11 @@ void setup(){
 }
 
 void draw(){
-    fill(255);
+    fill(255,255,255);
     rect(0,0,600,600);//画面を真っ白に
 
     ellipse(x,y,200,200);
-    fill(0);
+    fill(0,0,0);
     ellipse(x-50,y-20,50,50);
     ellipse(x+50,y-20,50,50);
     line(x-50,y+50,x+50,y+50);//顔を描く
@@ -128,11 +128,11 @@ void setup(){
 }
 
 void draw(){
-    fill(255);
+    fill(255,255,255);
     rect(0,0,600,600);//画面を真っ白に
 
     ellipse(x,y,200,200);
-    fill(0);
+    fill(0,0,0);
     ellipse(x-50,y-20,50,50);
     ellipse(x+50,y-20,50,50);
     line(x-50,y+50,x+50,y+50);//顔を描く
