@@ -36,6 +36,7 @@ ex.) $HOME/
 ## cdコマンド
 弟「ねぇねぇﾆｲﾁｬﾝ」  
 弟「今作ったディレクトリに移動したいんだけど・・・」  
+
 ﾆｲﾁｬﾝ「それなら`cd`コマンド打てば移動できるよ」  
 ﾆｲﾁｬﾝ「`prac-kickstart`に移動しよう！」  
 
@@ -252,5 +253,35 @@ ex.) $HOME/prac-kickstart/echo
 macOSには標準の`terminal`が用意されているので、そちらで一旦別のSHELLに変えて、
 間違って記述した部分を削除して`iTerm2`を起動させることができたことがある。  
 
+## grepコマンド
+弟「ねぇねぇﾆｲﾁｬﾝ」  
+弟「`grep/grep.txt`に書かれた文字列の中で、`jo-kenkun`という文字を取り出したいんだけど・・・」  
+
+ﾆｲﾁｬﾝ「それならfile内を`grep`コマンドを使って検索すればいいよ！」  
+
+> `grep/`というdirectoryとその配下に`grep.txt`を作って、以下の文をコピーしておいてください
+
+$HOME/prac-kickstart/grep/grep.txt
+```
+ctf-kenkun 080-1111-2222 Matsumoto
+sekaowa-kun 080-3434-6565 Nagano
+ringo-kun 090-1211-2344 Suwa
+hakuba-kun 070-3456-3321 Hakuba
+jo-kenkun 080-6534-2314 Nagano
+```
+
+ex.) $HOME/prac-kickstart/grep  
+
+<img src="../images/grep.png" width=50%>
+
+ﾆｲﾁｬﾝ「`grep`だけだと表示されないから`|`（パイプ）というものを使うんだよ。」  
+ﾆｲﾁｬﾝ「パイプのイメージは以下の図の感じだよ。」  
+
+<img src="../images/pipe.jpg" width=50%>
+
+ﾆｲﾁｬﾝ「2つのコマンドを繋げるイメージだね」
+ﾆｲﾁｬﾝ「`grep`はいろいろな場面で使うので覚えておいてね！」
+
+ﾆｲﾁｬﾝ「ちなみに`grep`は`global regular expression print`（全体のうち正規表現なものを表示）の略だよ！」
 
 [^1]: typoとは「打ち間違い」のこと
