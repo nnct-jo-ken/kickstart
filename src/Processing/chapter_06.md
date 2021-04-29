@@ -109,3 +109,26 @@ print(cnt);
 </div></details>
 
 ##　二重for文
+
+```java
+size(500,500);
+for(int x=0;x<=500;x+=100)ellipse(x,000,100,100);
+for(int x=0;x<=500;x+=100)ellipse(x,100,100,100);
+for(int x=0;x<=500;x+=100)ellipse(x,200,100,100);
+for(int x=0;x<=500;x+=100)ellipse(x,300,100,100);
+for(int x=0;x<=500;x+=100)ellipse(x,400,100,100);
+for(int x=0;x<=500;x+=100)ellipse(x,500,100,100);
+```
+![画面](img/fig6-2.png "画面")
+
+上のfor文は
+```java
+size(500,500);
+for(int y=0;y<=500;y+=100){
+  for(int x=0;x<=500;x+=100){
+    ellipse(x,y,100,100);
+  }
+}
+```
+
+こうまとめられますね(説明放棄)．
