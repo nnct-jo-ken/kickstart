@@ -89,7 +89,9 @@ while文と違って，
 > 1以上10000以下の整数で，6の倍数である，または9の倍数である整数の個数を求めなさい．
 
 ### 解答
+
 <details><summary>解答</summary><div>
+
 演習6-1:
 
 ```java
@@ -104,11 +106,13 @@ int cnt=0;
 for(int i=1;i<=10000;i++)if(i%6==0||i%9==0)cnt++;
 print(cnt);
 ```
+
 これは，10000/6+10000/9-10000/18と等しいです．
 
 </div></details>
 
-##　二重for文
+
+## 二重for文
 
 ```java
 size(500,500);
@@ -119,7 +123,7 @@ for(int x=0;x<=500;x+=100)ellipse(x,300,100,100);
 for(int x=0;x<=500;x+=100)ellipse(x,400,100,100);
 for(int x=0;x<=500;x+=100)ellipse(x,500,100,100);
 ```
-![画面](img/fig6-2.png "画面")
+
 
 上のfor文は
 ```java
@@ -141,6 +145,7 @@ for(int y=0;y<=500;y+=100){
 <details><summary>解答</summary><div>
 演習6-3:
 一例です．
+
 ```java
 size(700,700);
 for(int y=100;y<=600;y+=100){

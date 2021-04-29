@@ -72,15 +72,16 @@ if(age==7 || age==5 || age==3){
 
 #### 解答例
 <details><summary>解答例:コードを書いてから答えをみよう！</summary><div>
-演習2-1
+演習5-2:
 
-```java:演習5-1
+```java
 if(score<60){
     print("留年");
 }
 ```
+演習5-2:
 
-```java:演習2-2
+```java
 if(score<60||score>100){
     print("留年");
 }
