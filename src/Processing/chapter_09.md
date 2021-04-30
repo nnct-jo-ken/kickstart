@@ -1,1 +1,1 @@
-# Chapter 9:配列
+# Chapter 9:クラスとメンバ
