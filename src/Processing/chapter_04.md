@@ -2,6 +2,8 @@
 ## 目標
 図形を動かすことができる
 
+![画面](img/fig4-1.gif "Processingの画面")
+
 ## setup()とdraw()
 ```java
 //ここで変数の宣言をする
