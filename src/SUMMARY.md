@@ -18,8 +18,7 @@
   - [Chapter 4:ボールを動かそう](ProcessingGame/Game_04.md)
 
 - [発展](ProcessingChallenge/README.md)
-  - [発展 1:円運動](ProcessingChallenge/circle.md)
-  - [発展 2:平方根](ProcessingChallenge/sqrt.md))
+  - [平方根](ProcessingChallenge/sqrt.md))
 
 - [補足資料](ProcessingOther/README.md)
   - [コンピュータ上での色の表現](ProcessingOther/color.md)
