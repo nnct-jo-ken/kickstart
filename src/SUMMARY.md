@@ -13,8 +13,9 @@
 
 - [ゲームを作ってみよう](ProcessingGame/README.md)
   - [Chapter 1:設計を考えよう](ProcessingGame/Game_01.md)
-  - [Chapter 2:バーを作ろう](ProcessingGame/Game_02.md)
-  - [Chapter 3:ボールを動かそう](ProcessingGame/Game_03.md)
+  - [Chapter 2:バーとボールを作ろう](ProcessingGame/Game_02.md)
+  - [Chapter 3:バーを動かそう](ProcessingGame/Game_03.md)
+  - [Chapter 4:ボールを動かそう](ProcessingGame/Game_04.md)
 
 - [発展](ProcessingChallenge/README.md)
   - [発展 1:円運動](ProcessingChallenge/circle.md)
