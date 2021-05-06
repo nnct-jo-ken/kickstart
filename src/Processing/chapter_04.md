@@ -90,7 +90,8 @@ void draw(){
 
 
 ```java
-int x=300,y=300,vx=2,vy=1;
+int x=300,y=300;//座標
+int vx=2,vy=1;//速度
 
 void setup(){
     size(600,600);
@@ -107,9 +108,9 @@ void draw(){
 具体的には，次のプログラムのように加速度を導入したときに，これらの数を変数として宣言しておくと，初期値の設定がはじめの数行でまとめてできるので楽です．
 
 ```java
-int x=300,y=300;
-int vx=-10,vy=0;
-int ax=1,ay=0;
+int x=300,y=300;//座標
+int vx=-10,vy=0;//速度
+int ax=1,ay=0;//加速度
 
 void setup(){
     size(600,600);
