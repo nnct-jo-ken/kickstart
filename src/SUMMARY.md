@@ -1,6 +1,6 @@
 # Summary
 
-- [プログラミング入門](Processing/README.md)
+- [プログラミング入門]()
   - [Chapter 1:Processingを始めよう](Processing/chapter_01.md)
   - [Chapter 2:図形を描いてみよう](Processing/chapter_02.md)
   - [Chapter 3:変数](Processing/chapter_03.md)
@@ -11,16 +11,16 @@
   - [Chapter 8:配列](Processing/chapter_08.md)
   - [Chapter 9:クラスとメンバ](Processing/chapter_09.md)
 
-- [ゲームを作ってみよう](ProcessingGame/README.md)
+- [ゲームを作ってみよう]()
   - [Chapter 1:設計を考えよう](ProcessingGame/Game_01.md)
   - [Chapter 2:バーとボールを作ろう](ProcessingGame/Game_02.md)
   - [Chapter 3:バーを動かそう](ProcessingGame/Game_03.md)
   - [Chapter 4:ボールを動かそう](ProcessingGame/Game_04.md)
 
-- [発展](ProcessingChallenge/README.md)
+- [発展]()
   - [平方根](ProcessingChallenge/sqrt.md))
 
-- [補足資料](ProcessingOther/README.md)
+- [補足資料]()
   - [コンピュータ上での色の表現](ProcessingOther/color.md)
   - [変数の詳しい話](ProcessingOther/var.md)
   - [演算子](ProcessingOther/operator.md)
