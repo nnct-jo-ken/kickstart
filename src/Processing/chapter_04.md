@@ -64,7 +64,8 @@ void draw(){
 前回使用した顔を描くプログラムについても同じことができます．
 
 ```java
-int x=300,y=300;
+int x=300;
+int y=300;
 
 void setup(){
     size(600,600);
