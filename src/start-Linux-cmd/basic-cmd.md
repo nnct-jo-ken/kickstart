@@ -103,8 +103,8 @@ ex.) $Home/
 ﾆｲﾁｬﾝ「**`cd`は`change directory`の略と理解すると覚えやすいよ。**」  
 
 
-ﾆｲﾁｬﾝ「`..`は一つ下のdirectoryを指すから、`cd ..`と打つと、」  
-ﾆｲﾁｬﾝ「一つ下のdirectoryに移動するよ」  
+ﾆｲﾁｬﾝ「`..`は一つ上のdirectoryを指すから、`cd ..`と打つと、」  
+ﾆｲﾁｬﾝ「一つ上のdirectoryに移動するよ」  
 
 ﾆｲﾁｬﾝ「[echoコマンド](#echoコマンド)の章で、directory移動で使うよ！」  
 
