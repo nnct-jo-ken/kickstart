@@ -133,7 +133,8 @@ if(score>=60){
 
 
 ```java
-int x=300,y=300;
+int x=300;
+int y=300;
 
 void setup(){
     size(600,600);
