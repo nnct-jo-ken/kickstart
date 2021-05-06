@@ -90,7 +90,7 @@ if(score<60||score>100){
 </div></details>
 
 ## else,else if
-elseは文字通りそうでないときの処理を書きます．
+else（日本語: 他の）は文字通りそうでないときの処理を書きます．
 
 ```java
 int score=74;
