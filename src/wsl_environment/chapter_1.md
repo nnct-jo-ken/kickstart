@@ -16,7 +16,7 @@ WSL2(Windows Subsystem for Linux 2)は、Windows10上でLinuxを動作させる�
 （CygwinはWSL2を導入しても使うことができるので、アンインストールする必要はありません。）
 
 # WSL2の導入
-WSL2を導入していきます。導入は<a href="https://docs.microsoft.com/ja-jp/windows/wsl/install-win10">Microsoftの公式ドキュメント</a>の手順で行っていきます。
+WSL2を導入していきます。導入は[Microsoftの公式ドキュメント](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)の手順で行っていきます。
 
 ## 1.Linux用Windowsサブシステムを有効にする
 Windows上にLinuxディストリビューションをインストールする前に、まず
@@ -72,9 +72,9 @@ Linuxカーネル更新プログラムパッケージの最新のパッケージ
 
 "2.WSL2の実行に関する要件を確認する"で確認した"システムの種類"に応じて以下のパッケージをダウンロードしてください。
 
-<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">x64マシン用WSL2 Linux カーネル更新プログラムパッケージ</a>
+[x64マシン用WSL2 Linux カーネル更新プログラムパッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
-<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi">ARM64マシン用WSL2 Linux カーネル更新プログラムパッケージ</a>
+[ARM64マシン用WSL2 Linux カーネル更新プログラムパッケージ](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_arm64.msi)
 
 ダウンロードしたら、更新プログラムパッケージを実行します。
 
@@ -129,3 +129,5 @@ Microsoft Storeを起動して"Ubuntu"と検索し、Ubuntuを選択してくだ
 
 WSL2上でUbuntuを使うときはスタートメニューからUbuntuを選択して、実行することで、
 使用することができます。（または、自分の好きなターミナルを設定して、WSL2を使用することもできます。）
+
+<img src="./img/ubuntu_start.png" width=75%>
