@@ -147,7 +147,8 @@ void draw(){
     fill(255,255,255);
     rect(0,0,600,600);//画面を真っ白に
     
-    x=mouseX;y=mouseY;
+    x=mouseX;
+    y=mouseY;
     ellipse(x,y,200,200);
     fill(0,0,0);
     ellipse(x-50,y-20,50,50);
