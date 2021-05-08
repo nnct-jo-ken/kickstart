@@ -80,7 +80,7 @@ if(score<60){
     print("留年");
 }
 ```
-演習5-2:
+演習5-3:
 
 ```java
 if(score<60||score>100){
