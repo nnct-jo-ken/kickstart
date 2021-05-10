@@ -47,6 +47,9 @@
         
 
         
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -97,7 +100,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Kickstart Programming</a></li><li class="chapter-item expanded "><a href="wsl_environment/chapter_1.html"><strong aria-hidden="true">2.</strong> WSL2の環境構築</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Kickstart Programming</a></li><li class="chapter-item expanded "><a href="wsl_environment/chapter_1.html"><strong aria-hidden="true">2.</strong> WSL2の環境構築</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> プログラミング入門</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="Processing/chapter_01.html"><strong aria-hidden="true">3.1.</strong> Chapter 1:Processingを始めよう</a></li><li class="chapter-item expanded "><a href="Processing/chapter_02.html"><strong aria-hidden="true">3.2.</strong> Chapter 2:図形を描いてみよう</a></li><li class="chapter-item expanded "><a href="Processing/chapter_03.html"><strong aria-hidden="true">3.3.</strong> Chapter 3:変数</a></li><li class="chapter-item expanded "><a href="Processing/chapter_04.html"><strong aria-hidden="true">3.4.</strong> Chapter 4:動きを作る</a></li><li class="chapter-item expanded "><a href="Processing/chapter_05.html"><strong aria-hidden="true">3.5.</strong> Chapter 5:分岐処理</a></li><li class="chapter-item expanded "><a href="Processing/chapter_06.html"><strong aria-hidden="true">3.6.</strong> Chapter 6:繰り返し処理</a></li><li class="chapter-item expanded "><a href="Processing/chapter_07.html"><strong aria-hidden="true">3.7.</strong> Chapter 7:関数を作る</a></li><li class="chapter-item expanded "><a href="Processing/chapter_08.html"><strong aria-hidden="true">3.8.</strong> Chapter 8:配列</a></li><li class="chapter-item expanded "><a href="Processing/chapter_09.html"><strong aria-hidden="true">3.9.</strong> Chapter 9:クラスとメンバ</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> ゲームを作ってみよう</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="ProcessingGame/Game_01.html"><strong aria-hidden="true">4.1.</strong> Chapter 1:設計を考えよう</a></li><li class="chapter-item expanded "><a href="ProcessingGame/Game_02.html"><strong aria-hidden="true">4.2.</strong> Chapter 2:バーとボールを作ろう</a></li><li class="chapter-item expanded "><a href="ProcessingGame/Game_03.html"><strong aria-hidden="true">4.3.</strong> Chapter 3:バーを動かそう</a></li><li class="chapter-item expanded "><a href="ProcessingGame/Game_04.html"><strong aria-hidden="true">4.4.</strong> Chapter 4:ボールを動かそう</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 発展</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="ProcessingChallenge/sqrt.html"><strong aria-hidden="true">5.1.</strong> 平方根</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 補足資料</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="ProcessingOther/color.html"><strong aria-hidden="true">6.1.</strong> コンピュータ上での色の表現</a></li><li class="chapter-item expanded "><a href="ProcessingOther/var.html"><strong aria-hidden="true">6.2.</strong> 変数の詳しい話</a></li><li class="chapter-item expanded "><a href="ProcessingOther/operator.html"><strong aria-hidden="true">6.3.</strong> 演算子</a></li><li class="chapter-item expanded "><a href="ProcessingOther/scratch.html"><strong aria-hidden="true">6.4.</strong> Scratchの命令に置き換えると？</a></li></ol></li><li class="chapter-item expanded "><a href="ProcessingSample/all.html"><strong aria-hidden="true">7.</strong> サンプルプログラム</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -254,7 +257,1414 @@
 <p>WSL2上でUbuntuを使うときはスタートメニューからUbuntuを選択して、実行することで、
 使用することができます。（または、自分の好きなターミナルを設定して、WSL2を使用することもできます。）</p>
 <img src="wsl_environment/./img/ubuntu_start.png" width=75%>
+<h1 id="processingをはじめよう"><a class="header" href="#processingをはじめよう">Processingをはじめよう</a></h1>
+<h2 id="processingって何"><a class="header" href="#processingって何">Processingって何</a></h2>
+<p>絵が描けるアプリケーションです．コードで絵を描きます．</p>
+<p><img src="Processing/img/Pro.png" alt="icon" title="icon" /></p>
+<h2 id="なんでprocessingなの"><a class="header" href="#なんでprocessingなの">なんでProcessingなの</a></h2>
+<p>C言語をコマンドプロンプトの文字だけの真っ黒な画面でやるよりも楽しいしわかりやすいと思うからです．
+そして，環境構築が楽だからです．</p>
+<h2 id="processingをdlしよう"><a class="header" href="#processingをdlしよう">ProcessingをDLしよう</a></h2>
+<p><a href="https://processing.org/download/">こちらのサイト</a>で環境を選べばDLが始まります．
+DLしたファイルを開いて指示に従えばDL完了です．Processing.exeとかProcessing.appを実行すれば，もうさっそくプログラム作成ができます．</p>
+<h2 id="qa"><a class="header" href="#qa">Q&amp;A</a></h2>
+<p>Q:日本語が打てねぇぜ，あと文字小さい</p>
+<ul>
+<li>ファイル/設定/から日本語が使えるフォントと選びます．文字サイズもそこで変更できます．</li>
+</ul>
+<p>Q:簡単すぎてつまらん</p>
+<ul>
+<li>発展チャプターを用意してあります．</li>
+</ul>
+<p>Q:いやなんもわからん</p>
+<ul>
+<li>先輩かわかる同級生に聞いてみよう！</li>
+</ul>
+<h1 id="図形を描いてみよう"><a class="header" href="#図形を描いてみよう">図形を描いてみよう</a></h1>
+<h2 id="今回の目標"><a class="header" href="#今回の目標">今回の目標</a></h2>
+<p>円や長方形で構成された簡単な絵が描ける．</p>
+<p>具体的には次の絵を描くことが目標です．
+<img src="Processing/img/fig3-6.png" alt="画面" title="Processingの画面" /></p>
+<h2 id="実際に図形を描く"><a class="header" href="#実際に図形を描く">実際に図形を描く</a></h2>
+<h3 id="コードを書いてみよう"><a class="header" href="#コードを書いてみよう">コードを書いてみよう</a></h3>
+<p>次のコードを入力してみましょう．最後のセミコロン(;)を忘れずに．</p>
+<pre><code class="language-java">size(500,400);
+</code></pre>
+<p><img src="Processing/img/fig2-1.png" alt="画面" title="Processingの画面" /></p>
+<h3 id="実行しよう"><a class="header" href="#実行しよう">実行しよう</a></h3>
+<p>ウィンドウに再生マークのボタンがありますね．クリックすると実行されます．新しく画面(ウィンドウ)が表示されました．</p>
+<p><img src="Processing/img/fig2-2.png" alt="画面" title="実行してでてきた画面" /></p>
+<ul>
+<li>実行ボタンを押してもウィンドウが表示されなかったらもう一度コードを確認してみよう．どこかが間違っているはず．</li>
+</ul>
+<h3 id="数字を変えてみよう"><a class="header" href="#数字を変えてみよう">数字を変えてみよう</a></h3>
+<pre><code class="language-java">size(500,400);
+</code></pre>
+<p>の(500,400)と入力したところを別の数字にしてみましょう．</p>
+<p>例えば</p>
+<pre><code class="language-java">size(600,100);
+</code></pre>
+<p>と入力して，実行をすると</p>
+<p><img src="Processing/img/fig2-3.png" alt="画面" title="実行してでてきた画面" /></p>
+<p>横長になりました．</p>
+<p>さて，お気づきの方もいるかもしれませんが，この<code>size(数字,数字);</code>というのは画面のサイズを指定しています．具体的には，<code>size(x,y);</code>というコードは画面の横の長さをx，縦の長さをyにする，という意味を持っています．</p>
+<h3 id="コードを書いてみようその2"><a class="header" href="#コードを書いてみようその2">コードを書いてみようその2</a></h3>
+<p>次のコードを入力してみましょう．入力し終わったら，実行ボタンを押して実行しましょう．</p>
+<pre><code class="language-java">size(500,400);
+rect(100,200,300,100);
+</code></pre>
+<p>次のような画面が表示されます．</p>
+<p><img src="Processing/img/fig2-4.png" alt="画面" title="実行してでてきた画面" /></p>
+<p>画面内に白い長方形が描かれました．数字をいろいろ変えて，この数が何を意味するのかを考えてみてください．</p>
+<h3 id="rectの正体"><a class="header" href="#rectの正体">rectの正体</a></h3>
+<p><code>rect(a,b,c,d)</code>を実行すると座標(a,b)を左上とする，横の長さc，縦の長さdの長方形が描かれます．</p>
+<p><img src="Processing/img/fig2-5.svg" alt="画面" title="実行してでてきた画面" /></p>
+<p>ここでの座標というのは数学でもでてきた平面での場所を表す数字です．上の図のように，画面の左上を原点としProcessingの世界では，xは右方向が正，yは下方向が正，と決まっています．y座標が下に行くほど増えていくところに注意です．</p>
+<ul>
+<li>Processingに対して「画面描いて！」とか「正方形描いて！」みたいに命令しているので，「命令」と呼びます．</li>
+</ul>
+<h3 id="練習"><a class="header" href="#練習">練習</a></h3>
+<h4 id="演習2-1"><a class="header" href="#演習2-1">演習2-1</a></h4>
+<blockquote>
+<p>横600,縦300のウィンドウに，左上の座標が(100,50)で横の長さが200,縦の長さが100の長方形を描け．</p>
+</blockquote>
+<h4 id="演習2-2"><a class="header" href="#演習2-2">演習2-2</a></h4>
+<blockquote>
+<p>横450,縦600のウィンドウに，左上の座標が(100,100)で右下の座標が(400,400)の正方形を描け．</p>
+</blockquote>
+<h4 id="解答例"><a class="header" href="#解答例">解答例</a></h4>
+<details><summary>解答例:コードを書いてから答えをみよう！</summary><div>
+演習2-1
+<pre><code class="language-java:演習2-1">size(600,300);
+rect(100,50,200,100);
+</code></pre>
+<p>演習2-2：<code>rect(a,b,c,d)</code>のc,dは座標ではなく辺の長さです．辺の長さは400-100=300なので，cとdは300にする必要があります．</p>
+<pre><code class="language-java:演習2-2">size(450,600);
+rect(100,100,300,300);
+</code></pre>
+</div></details>
+<h2 id="他の図形を描く"><a class="header" href="#他の図形を描く">他の図形を描く</a></h2>
+<p>さきほどの<code>rect()</code>の他にも，三角形などを描く方法があります．
+表にまとめてありますが，これらを頑張って覚える必要はありません．なぜなら，<a href="https://processing.org/reference/">リファレンス</a>をみればわかるからです．</p>
+<table><thead><tr><th align="left">方法</th><th align="left">起こること</th></tr></thead><tbody>
+<tr><td align="left"><code>point(x,y)</code></td><td align="left">座標(x,y)に点をうつ</td></tr>
+<tr><td align="left"><code>line(x1,y1,x2,y2)</code></td><td align="left">座標(x1,y1)と座標(x2,y2)が両端の線分を描く</td></tr>
+<tr><td align="left"><code>ellipse(x,y,a,b)</code></td><td align="left">座標(x,y)を中心に横軸がa，縦軸がbの楕円を描く<sup class="footnote-reference"><a href="#1">1</a></sup></td></tr>
+<tr><td align="left"><code>triangle(x1,y1,x2,y2,x3,y3)</code></td><td align="left">(x1,y1) と (x2,y2) と (x3,y3) をつなぐ三角形を描く</td></tr>
+<tr><td align="left"><code>fill(r,g,b)</code></td><td align="left">この命令の後に描く図形の内部は色(r,g,b)<sup class="footnote-reference"><a href="#2">2</a></sup>で塗られる</td></tr>
+<tr><td align="left"><code>stroke(r,g,b)</code></td><td align="left">この命令の後に描く図形の輪郭は色(r,g,b)で塗られる</td></tr>
+</tbody></table>
+<ul>
+<li>上の表のxやaのことを引数(引数)と呼びます．</li>
+</ul>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>aとbを同じ数cにすれば直径がcの円が描けます．例えばellipse(10,10,7,7)は中心(10,10)直径7の円を描きます．</p>
+</div>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>色の指定方法については<a href="Processing/chapter_02.html#%E8%A3%9C%E8%B6%B3%E8%B3%87%E6%96%99">補足資料</a>をご覧ください</p>
+</div>
+<p>fillの使い方を示します．</p>
+<pre><code class="language-java">size(400,200);
+ellipse(100,100,80,80);
+fill(255,0,0);//ここから後に描く図形を赤く塗る
+ellipse(300,100,80,80);
+</code></pre>
+<p><img src="Processing/img/fig2-6.png" alt="画面" title="実行してでてきた画面" /></p>
+<p>ここで注意するのが，<em>プログラムは上から下へ順番に</em>実行されるということです．</p>
+<h2 id="練習-1"><a class="header" href="#練習-1">練習</a></h2>
+<h3 id="演習2-3"><a class="header" href="#演習2-3">演習2-3</a></h3>
+<blockquote>
+<p>画像のように日本の国旗をかけ．アスペクト比などは厳密でなくて良い．
+<img src="Processing/img/fig2-7.png" alt="画面" title="実行してでてきた画面" /></p>
+</blockquote>
+<h3 id="解答例-1"><a class="header" href="#解答例-1">解答例</a></h3>
+<details><summary>解答例</summary><div>
+演習2-3：正方形の真ん中の座標は(250,250)で，一辺が300なので，中心(250,250)直径300の円を描けば良い
+<pre><code class="language-java:演習2-3">size(600,400);
+fill(255,255,255);
+rect(0,0,600,400);
+fill(255,0,0);
+ellipse(300,200,300,300);
+</code></pre>
+</div></details>
+<h2 id="作る"><a class="header" href="#作る">作る</a></h2>
+<p>数種類の図形でオリジナルの絵(思いつかなかったら信号)を書いてみましょう．</p>
+<p>私は顔を書いてみました．</p>
+<pre><code class="language-java">size(600,600);
+ellipse(300,300,200,200);
+fill(0,0,0);
+ellipse(250,280,50,50);
+ellipse(350,280,50,50);
+line(250,350,350,350);
+</code></pre>
+<p>実行結果はこちらです．
+<img src="Processing/img/fig3-6.png" alt="画面" title="Processingの画面" /></p>
+<h1 id="変数"><a class="header" href="#変数">変数</a></h1>
+<h2 id="今回の目標-1"><a class="header" href="#今回の目標-1">今回の目標</a></h2>
+<p>変数の使い方と，使う利点がわかる．</p>
+<h2 id="定義と代入"><a class="header" href="#定義と代入">定義と代入</a></h2>
+<h3 id="変数とは"><a class="header" href="#変数とは">変数とは</a></h3>
+<p>別の言葉を使って例えるのならば箱です．何かを入れて保管(記憶)しておくことができます．</p>
+<h3 id="変数の宣言"><a class="header" href="#変数の宣言">変数の宣言</a></h3>
+<pre><code class="language-java">int a;
+</code></pre>
+<p>これでaという名前の変数が作られました．<code>int</code>は「整数を入れる変数を作れ」という意味です．
+実行してでてきた小さいウィンドウ<sup class="footnote-reference"><a href="#1">1</a></sup>は無視しましょう．</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>size();関数で何も設定しなかったので最小サイズのウィンドウがでてきてしまいました．</p>
+</div>
+<h3 id="変数に数を入れる"><a class="header" href="#変数に数を入れる">変数に数を入れる</a></h3>
+<p>このままだと，変数が空っぽなので数を入れます</p>
+<pre><code class="language-java">int a;
+a=6;
+</code></pre>
+<p><code>a=6</code>の行が追加されました．これでaという名前の変数に6という数字が入りました．注意するのは，ここでのイコール(=)は，<strong>等しいという意味ではありません</strong>．イコールの右にある数をaに「<strong>代入する</strong>」という意味です．
+ところで，本当にaに6が入っているかどうか気になりますね．そこで，aという変数の中に何が入っているかを確認します．</p>
+<pre><code class="language-java">int a;
+a=6;
+print(a);
+</code></pre>
+<p>下の黒いところがコンソールです．</p>
+<p><code>print();</code>命令は，コンソールに表示させる命令です．</p>
+<p><img src="Processing/img/fig3-1.png" alt="画面" title="Processingの画面" /></p>
+<p>実行ボタンを押すとそこに6と表示されます．</p>
+<p><img src="Processing/img/fig3-2.png" alt="画面" title="Processingの画面" /></p>
+<p>地味ですね．別の数字も試して，結果がどうなるかを確認しましょう．また，次のコードのように定義と代入を同時に行うことができます．</p>
+<pre><code class="language-java">int a=6;
+print(a);
+</code></pre>
+<p>変数は別に一文字でなくてもよいです．</p>
+<pre><code class="language-java">int apple=6;
+int grape=4;
+print(apple,grape);
+</code></pre>
+<p>このように変数に適切な名前を付けることで何を表しているのかを分かりやすくできます．</p>
+<p>変数の命名ですが，</p>
+<ul>
+<li>アルファベット(大文字小文字問わない)かアンダーバーで始まる</li>
+<li>一文字目以外はアルファベット，数字，アンダーバーのみで構成されている
+ことがルールです．</li>
+</ul>
+<pre><code class="language-java">int w1000000007ushitapunikiakun;//よい
+int _x;//よい
+int 3_e;//エラー
+</code></pre>
+<h3 id="変数を使用するときのエラー"><a class="header" href="#変数を使用するときのエラー">変数を使用するときのエラー</a></h3>
+<p>今度は値を代入せずに表示させます．</p>
+<pre><code class="language-java">int a;
+print(a);
+</code></pre>
+<p>実行すると</p>
+<p><img src="Processing/img/fig3-3.png" alt="画面" title="Processingの画面" /></p>
+<p>英語ができてました．エラー文といいます．これを読んで何がエラーの原因なのかを考えます．英語が読めなかったらGoogle先生に任せましょう．</p>
+<p><img src="Processing/img/fig3-4.png" alt="画面" title="Processingの画面" /></p>
+<p>原因はaに何も値を入れていないことです．「aという変数を作ったけれど，中身は空っぽなので表示できません！」という意味です．変数の中身を使う場合は中身を入れてあるかに注意しましょう．</p>
+<p>また，<code>int a</code>でaという名前の変数を作らなかった場合もエラーになります．</p>
+<pre><code class="language-java">a=28;
+print(a);
+</code></pre>
+<p><img src="Processing/img/fig3-5.png" alt="画面" title="Processingの画面" /></p>
+<p>他にも，同じ名前の変数は作れないルールがあります．<sup class="footnote-reference"><a href="#2">2</a></sup>．</p>
+<pre><code class="language-java">int a;
+int a;//変数名は被ってはいけない(エラー)
+a=2;
+</code></pre>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>厳密には，同じブロック内でなければ問題ありませんが，今は気にしなくてよいです．</p>
+</div>
+<h2 id="式で代入"><a class="header" href="#式で代入">式で代入</a></h2>
+<pre><code class="language-java">int a;
+a=1+3;
+print(a);
+</code></pre>
+<p>このように式で代入することもできます．</p>
+<table><thead><tr><th align="center">すること</th><th align="center">演算子</th><th align="center">例</th><th align="center">aの値</th></tr></thead><tbody>
+<tr><td align="center">足し算</td><td align="center"><code>+</code></td><td align="center"><code>a=24+41</code></td><td align="center"><code>65</code></td></tr>
+<tr><td align="center">引き算</td><td align="center"><code>-</code></td><td align="center"><code>a=5-12</code></td><td align="center"><code>-7</code></td></tr>
+<tr><td align="center">掛け算</td><td align="center"><code>*</code></td><td align="center"><code>a=25*8</code></td><td align="center"><code>200</code></td></tr>
+<tr><td align="center">割り算<sup class="footnote-reference"><a href="#3">3</a></sup></td><td align="center"><code>/</code></td><td align="center"><code>a=76/19</code></td><td align="center"><code>4</code></td></tr>
+<tr><td align="center">割った余り<sup class="footnote-reference"><a href="#4">4</a></sup></td><td align="center"><code>%</code></td><td align="center"><code>a=25%4</code></td><td align="center"><code>1</code></td></tr>
+</tbody></table>
+<div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
+<p>整数同士で割り算をすると，小数点以下は切り捨てられます．10/3=3,3/4=0となります．</p>
+</div>
+<div class="footnote-definition" id="4"><sup class="footnote-definition-label">4</sup>
+<p>数学でいうと合同式のmodのようなものです．例えば，整数aの一の位はa%10で得ることができます．</p>
+</div>
+<p>変数を使って計算することも可能です．電卓みたいですね．</p>
+<pre><code class="language-java">int grape=3;
+int apple=5;
+int fruit=grape+apple;
+print(fruit);
+</code></pre>
+<pre><code class="language-java">int side=9;
+int volume=side*side*side;
+print(volume);
+</code></pre>
+<p>演算は括弧を使うことも可能です．</p>
+<pre><code class="language-java">int a=5,b=3;
+int c=(a+b)*(a-b);//8*2
+print(c);//16
+</code></pre>
+<p>次のコードを確認しましょう．</p>
+<pre><code class="language-java">int a=5;
+a=a+6;
+print(a);
+</code></pre>
+<p>このプログラムは少しトリッキーに見えるかもしれませんが，理路整然とシュミレーションしてみれば難しくありません．aという名前の変数にa+6の結果を代入するという意味ですが，このときのaは5ですので，aには5+6の11が代入されます．</p>
+<p>プログラムは上から下へ順番に，書いてあること通りに実行されていきます．これは，当たり前のように感じますが，慣れていない頃は意外と忘れがちです．</p>
+<p>また，セミコロンで区切ってさえあれば同じ行に命令を連ねることができますが，これは左から順番に実行されていきます．
+次のソースコードでは，<code>a=b</code>と<code>b=a</code>が同じ行にあり，同時に実行するように見えるかもしれませんが，そんなことはありません．<code>a=b;</code>のあとに改行したコードと全く同じ意味になります．</p>
+<pre><code class="language-java">int a=5,b=3;
+a=b;b=a;
+print(a,b);
+</code></pre>
+<pre><code class="language-java">int a=5,b=3;
+a=b;
+b=a;
+print(a,b);
+</code></pre>
+<p>逆に，一行に詰め込むことも可能です．</p>
+<pre><code class="language-java">int a=5,b=3;a=b;b=a;print(a,b);
+</code></pre>
+<h3 id="演習3-1"><a class="header" href="#演習3-1">演習3-1</a></h3>
+<blockquote>
+<p>次のプログラムを実行して表示される数はいくつか．</p>
+<pre><code class="language-java">int a=5;
+int b=3;
+a=a+b;
+b=a-b;
+print(b);
+</code></pre>
+</blockquote>
+<h3 id="演習3-2"><a class="header" href="#演習3-2">演習3-2</a></h3>
+<blockquote>
+<p>二つの変数の値を入れ替えるにはどうすればよいか</p>
+<pre><code class="language-java">int a=5,b=3;
+//何らかの処理
+print(a,b);//a=3,b=5を得たい
+</code></pre>
+</blockquote>
+<h3 id="解答"><a class="header" href="#解答">解答</a></h3>
+<details><summary>解答</summary><div>
+演習3-1：5
+上から順に実行されることに注意です．
+<pre><code class="language-java">a=a+b;//a=5+3 aが8
+b=a-b;//b=8-3 bが5
+</code></pre>
+<p>演習3-2：
+別の変数を用意すると簡単に実現できます</p>
+<pre><code class="language-java">int a=5,b=3;
+int t;
+t=a //tにaの値を取っておく
+a=b; //aに上書きされても
+b=t; //tにもともとのaの値が残っている
+print(a,b);
+</code></pre>
+</div></details>
+<h2 id="変数の活用例"><a class="header" href="#変数の活用例">変数の活用例</a></h2>
+<p>打つのが大変なのでコピペ推奨です．</p>
+<pre><code class="language-java">size(600,600);
+ellipse(300,300,200,200);
+fill(0,0,0);
+ellipse(250,280,50,50);
+ellipse(350,280,50,50);
+line(250,350,350,350);
+</code></pre>
+<p><img src="Processing/img/fig3-6.png" alt="画面" title="Processingの画面" /></p>
+<p>チャプター2で出てきた顔です．
+どうしてもこの顔が気に入らなければ別の絵を用意してもらって構いません．</p>
+<p>この顔をもう少し右に表示させたくなったとします．そうなると，顔を作っている全ての関数のx座標の値を変えなければなりません．手間です．さらに変更したくなったらまたまたひとつずつ書き換えなければなりません．非常に面倒ですね．そこで，次のように変数を使います．</p>
+<pre><code class="language-java">size(600,600);
+-ellipse(300,300,200,200);
+fill(0,0,0);
+-ellipse(250,280,50,50);
+-ellipse(350,280,50,50);
+-line(250,350,350,350);
+</code></pre>
+<p>これで，一行目のxとyの初期値さえ変えれば，顔の位置を移動させることができるようになりました．このように，複数の場所に関与して来る数は変数にしておくと汎用性が高くなります．</p>
+<h1 id="動きを作る"><a class="header" href="#動きを作る">動きを作る</a></h1>
+<h2 id="目標"><a class="header" href="#目標">目標</a></h2>
+<p>図形を動かすことができる</p>
+<p><img src="Processing/img/fig4-1.gif" alt="画面" title="Processingの画面" /></p>
+<h2 id="setupとdraw"><a class="header" href="#setupとdraw">setup()とdraw()</a></h2>
+<pre><code class="language-java">//ここで変数の宣言をする
 
+void setup(){
+    //初めの設定：変数への代入，size()命令など
+}
+
+void draw(){
+    //ここがずっと繰り返される
+}
+</code></pre>
+<p>急にvoid setup()やらdraw()が出てきて困惑するかもしれませんが，これはそういうものだと思ってください．</p>
+<p>例を次に示します．</p>
+<pre><code class="language-java">int x=300,y=300;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    ellipse(x,y,100,100);
+    x=x+1;
+}
+</code></pre>
+<p>draw()に円を描くプログラムと<code>x=x+1</code>が入っています．draw()の中は繰り返されるのでxの値がどんどん増えていきます．print(x)を後ろにおいてみるとよくわかります．
+draw()は，だいたい1秒間に60回実行されています．つまり，xは1秒で約60増えています．</p>
+<p><img src="Processing/img/fig4-1.png" alt="画面" title="Processingの画面" /></p>
+<p>この実行結果ですが，xをずらしながら円を描いているので残像がついています．</p>
+<p>そこで，draw()の初めで白い画面いっぱいの正方形で画面を塗りつぶして，一回まっさらの状態にします．</p>
+<pre><code class="language-java">int x=300,y=300;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    fill(255,255,255);
+    rect(0,0,600,600);
+    fill(0,0,0);
+    ellipse(x,y,100,100);
+    x=x+1;
+}
+</code></pre>
+<p>これで，残像がなくなりました．実行結果はこのチャプターの頭にあるgif画像です．</p>
+<h2 id="さらに動かす"><a class="header" href="#さらに動かす">さらに動かす</a></h2>
+<p>前回使用した顔を描くプログラムについても同じことができます．</p>
+<pre><code class="language-java">int x=300;
+int y=300;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    fill(255,255,255);
+    rect(0,0,600,600);//画面を真っ白に
+    
+    ellipse(x,y,200,200);
+    fill(0,0,0);
+    ellipse(x-50,y-20,50,50);
+    ellipse(x+50,y-20,50,50);
+    line(x-50,y+50,x+50,y+50);//顔を描く
+    
+    x=x+1;
+}
+</code></pre>
+<p>左方向や斜め方向に移動させるにはどうすればよいでしょうか．また，等速直線運動ではなく等加速度運動にするにはどうすればようでしょうか．</p>
+<p>次のプログラムでは，x方向とy方向のそれぞれの速度を変数として定義しています．</p>
+<p><code>x=x+2;y=y+1;</code>のように直接書きたくもなりますが，これを変数として宣言しておくことで汎用性が高いプログラムになります．</p>
+<pre><code class="language-java">int x=300,y=300;//座標
+int vx=2,vy=1;//速度
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    //中略
+    
+    x=x+vx;
+    y=y+vy;
+}
+</code></pre>
+<p>具体的には，次のプログラムのように加速度を導入したときに，これらの数を変数として宣言しておくと，初期値の設定がはじめの数行でまとめてできるので楽です．</p>
+<pre><code class="language-java">int x=300,y=300;//座標
+int vx=-10,vy=0;//速度
+int ax=1,ay=0;//加速度
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    //中略
+
+    vx=vx+ax;
+    vy=vy+ay;
+    x=x+vx;
+    y=y+vy;
+}
+</code></pre>
+<p>ところで，ここまで作ってきたプログラムは顔が画面外に出てしまうともう戻ってきません．もし画面外に出たとき，戻ってくる，という処理が欲しいですよね？</p>
+<p>それを実現するのが次のチャプターで出てくるif文です．</p>
+<h2 id="おまけ"><a class="header" href="#おまけ">おまけ</a></h2>
+<pre><code class="language-java">int x=300,y=300;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    fill(255,255,255);
+    rect(0,0,600,600);//画面を真っ白に
+    
+    x=mouseX;
+    y=mouseY;
+    ellipse(x,y,200,200);
+    fill(0,0,0);
+    ellipse(x-50,y-20,50,50);
+    ellipse(x+50,y-20,50,50);
+    line(x-50,y+50,x+50,y+50);//顔を描く
+}
+</code></pre>
+<h1 id="分岐処理"><a class="header" href="#分岐処理">分岐処理</a></h1>
+<h2 id="目標-1"><a class="header" href="#目標-1">目標</a></h2>
+<p>次の動きをするプログラムを作成できる</p>
+<p><img src="Processing/img/fig5-1.gif" alt="画面" title="Processingの画面" /></p>
+<h2 id="いつ使うのか"><a class="header" href="#いつ使うのか">いつ使うのか</a></h2>
+<p>ゲームとかでボタンを押すとキャラクターが動きますね．ボタンが押されたときと押されていないときで処理が違います．「もし〜ならこの処理をする」というのが欲しいですね．それがこれから紹介するif文です．</p>
+<h2 id="もしだったら"><a class="header" href="#もしだったら">もし〜だったら</a></h2>
+<p>「もしAだったらBをする」をプログラムにすると次のコードになります．</p>
+<pre><code class="language-java">if(A){
+    B
+}
+</code></pre>
+<p>Bには命令が入り，Aには条件式が入ります．</p>
+<table><thead><tr><th align="center">条件式</th><th align="center">日本語</th></tr></thead><tbody>
+<tr><td align="center"><code>a==b</code></td><td align="center">aとbが等しい</td></tr>
+<tr><td align="center"><code>a&gt;b</code></td><td align="center">aがbより大きい</td></tr>
+<tr><td align="center"><code>a&gt;=b</code></td><td align="center">aがb以上</td></tr>
+<tr><td align="center"><code>a&lt;b</code></td><td align="center">aがbより小さい</td></tr>
+<tr><td align="center"><code>a&lt;=b</code></td><td align="center">aがb以下</td></tr>
+</tbody></table>
+<p>aとbが等しい時の条件式が=ではなく**==**であることに注意です．</p>
+<p>次のプログラムでaの値を変えたり条件式を変えたりして動作を確認しましょう．</p>
+<pre><code class="language-java">int a=100;
+
+if(a==100){ // もし、aが100なら
+  print(&quot;aは100です&quot;);
+}
+
+if(a&gt;100){// aが100より大きいなら
+  print(&quot;aは100より大きいです&quot;);
+}
+</code></pre>
+<p>また，条件を連ねたいときは<code>&amp;&amp;</code>を使います．&quot;かつ&quot;と読み替えることができます．次のプログラムはaが100以上，かつaが200未満，という条件になります．</p>
+<pre><code class="language-java">int a=100;
+
+if( 100&lt;=a &amp;&amp; a&lt;200 ){ // aが100以上200未満なら
+  print(&quot;aは100以上200未満です&quot;);
+}
+</code></pre>
+<p>&quot;かつ&quot;(<code>&amp;&amp;</code>)に対して，<code>||</code><sup class="footnote-reference"><a href="#1">1</a></sup>は&quot;または&quot;を表す記号です．
+次のプログラムはageが7である，またはageが5である，またはageが3であるときに&quot;七五三&quot;を表示するプログラムです．</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>見慣れない記号かもしれません，パイプラインと呼びます．キーボードの右上の方にあります．</p>
+</div>
+<pre><code class="language-java">int age=10000;
+
+if(age==7 || age==5 || age==3){
+    print(&quot;七五三&quot;);
+}
+</code></pre>
+<h3 id="練習-2"><a class="header" href="#練習-2">練習</a></h3>
+<h4 id="演習5-1"><a class="header" href="#演習5-1">演習5-1</a></h4>
+<blockquote>
+<p><code>int score=任意の整数;</code>に対して，scoreが60未満の場合に「留年」と表示するプログラムを作成しなさい．</p>
+</blockquote>
+<h4 id="演習5-2"><a class="header" href="#演習5-2">演習5-2</a></h4>
+<blockquote>
+<p>演習5-1に加えて，scoreが100を超えていた場合(101以上)も&quot;留年&quot;と表示するプログラムを作成しなさい．</p>
+</blockquote>
+<h4 id="解答例-2"><a class="header" href="#解答例-2">解答例</a></h4>
+<details><summary>解答例:コードを書いてから答えをみよう！</summary><div>
+演習5-2:
+<pre><code class="language-java">if(score&lt;60){
+    print(&quot;留年&quot;);
+}
+</code></pre>
+<p>演習5-3:</p>
+<pre><code class="language-java">if(score&lt;60||score&gt;100){
+    print(&quot;留年&quot;);
+}
+</code></pre>
+</div></details>
+<h2 id="elseelse-if"><a class="header" href="#elseelse-if">else,else if</a></h2>
+<p>else（日本語: 他の）は文字通りそうでないときの処理を書きます．</p>
+<pre><code class="language-java">int score=74;
+if(score&lt;60){
+    print(&quot;不可&quot;);
+}else{
+    print(&quot;合格&quot;);
+}
+</code></pre>
+<p>次の2つのプログラムを比較してみましょう</p>
+<pre><code class="language-java">int score=74;
+if(score&lt;60){
+    print(&quot;不可&quot;);
+    score=60;
+}else{
+    print(&quot;合格&quot;);
+}
+</code></pre>
+<pre><code class="language-java">int score=74;
+if(score&lt;60){
+    print(&quot;不可&quot;);
+    score=60;
+}
+if(score&gt;=60){
+    print(&quot;合格&quot;);
+}
+</code></pre>
+<h2 id="実際に使う"><a class="header" href="#実際に使う">実際に使う</a></h2>
+<p>前回のチャプターで作った顔が動くプログラムで，xが無限に増え続けるので画面外にいってしまいます．そこでif文を使うと，右端にいったら左端から出てくるようにすることができます．</p>
+<pre><code class="language-java">int x=300;
+int y=300;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    fill(255,255,255);
+    rect(0,0,600,600);//画面を真っ白に
+
+    ellipse(x,y,200,200);
+    fill(0,0,0);
+    ellipse(x-50,y-20,50,50);
+    ellipse(x+50,y-20,50,50);
+    line(x-50,y+50,x+50,y+50);//顔を描く
+
+    x=x+3;
+    if(x&gt;700){//もしxが700を超えたら
+        x=-100;//xを-100に設定する
+    }
+}
+
+</code></pre>
+<p>y座標についても同じことをしてやると，古いDVDプレイヤーにスクリーンセーバーにありそうなちょっと面白い動きになります．</p>
+<pre><code class="language-java">int x=300;
+int y=300;
+int vx=9,vy=6;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    fill(255,255,255);
+    rect(0,0,600,600);//画面を真っ白に
+
+    ellipse(x,y,200,200);
+    fill(0,0,0);
+    ellipse(x-50,y-20,50,50);
+    ellipse(x+50,y-20,50,50);
+    line(x-50,y+50,x+50,y+50);//顔を描く
+
+    x=x+vx;
+    y=y+vy;
+    if(x&gt;700){//もしxが700を超えたら
+        x=-100;//xを-100に設定する
+    }
+    if(y&gt;700){//もしyが700を超えたら
+        y=-100;//yを-100に設定する
+    }
+}
+
+</code></pre>
+<h1 id="chapter-6繰り返し処理"><a class="header" href="#chapter-6繰り返し処理">Chapter 6:繰り返し処理</a></h1>
+<h2 id="まえおき"><a class="header" href="#まえおき">まえおき</a></h2>
+<p>processingで次の画像のようなものを描くプログラムを作るにはどうすればよいでしょうか．
+<img src="Processing/img/fig6-1.png" alt="画面" title="画面" /></p>
+<p>ellipse命令を羅列して地獄になる予感がします．そこで，同じ処理や似たような処理を行うのがwhile文，for文です．</p>
+<h2 id="while文"><a class="header" href="#while文">while文</a></h2>
+<p>whileには「～の間」という意味があります(接続詞として逆接の意味も持ちますが)．
+プログラム上でも意味は同じで，「Aが正しい間，Bを繰り返し実行」する場合は</p>
+<pre><code class="language-java">while(A){
+    B
+}
+</code></pre>
+<p>と書きます．Aにはif文でも使用した条件式が入ります．</p>
+<table><thead><tr><th align="center">条件式</th><th align="center">日本語</th></tr></thead><tbody>
+<tr><td align="center"><code>a==b</code></td><td align="center">aとbが等しい</td></tr>
+<tr><td align="center"><code>a&gt;b</code></td><td align="center">aがbより大きい</td></tr>
+<tr><td align="center"><code>a&gt;=b</code></td><td align="center">aがb以上</td></tr>
+<tr><td align="center"><code>a&lt;b</code></td><td align="center">aがbより小さい</td></tr>
+<tr><td align="center"><code>a&lt;=b</code></td><td align="center">aがb以下</td></tr>
+</tbody></table>
+<p>プログラムを見てみましょう．</p>
+<pre><code class="language-java">int hp=20;
+int attack=6;
+while(hp&gt;0){
+    hp=hp-attack;
+    print(hp);
+}
+print(&quot;GAME OVER&quot;);
+</code></pre>
+<p>動作の確認をするために，一個ずつ命令の通りにしたがってシュミレーションしてみましょう．</p>
+<p>注意するのは，hp&gt;0による，まだ繰り返すか否かを中括弧の終わりのところで審査することです．p=hp-attackでもしhp&gt;0を満たしてなくても，中括弧が閉じているところまでの命令は実行され，print(hp);を実行した後にhp&gt;0の判定が行われます．</p>
+<p>while文を使えば，次のようにすることで100回繰り返すことができます．</p>
+<pre><code class="language-java">int i=1;
+while(i&lt;=100){
+    print(i);
+    i++;
+}
+</code></pre>
+<p>ここで，変数iは繰り返し回数を表していますが，繰り返し処理を行うたびにいちいち準備するのは大変です．
+そこで，便利なのがfor文です．</p>
+<p>##　for文</p>
+<p>for文の書式は次の通りです．</p>
+<pre><code class="language-java">for(変数の宣言;条件式;1回繰り返したあとに行う処理){
+    //処理
+}
+</code></pre>
+<pre><code class="language-java">for(int i=1;i&lt;=100;i++){
+    print(i);
+}
+</code></pre>
+<p>つまり，上のコードは1回for文内を実行してiを+1することをi&lt;=100の間繰り返す，という意味になります．</p>
+<p>while文と違って，</p>
+<ul>
+<li>繰り返し用の変数の宣言</li>
+<li>繰り返し用の変数への加算</li>
+<li>繰り返しの条件
+を同時に設定することができるます．</li>
+</ul>
+<p>使い分けですが，繰り返す回数が決まっている場合はすっきり書けるfor文，そうでない場合はwhile文を使うことが多いです．</p>
+<h3 id="演習6-1"><a class="header" href="#演習6-1">演習6-1</a></h3>
+<blockquote>
+<p>1から2020までの整数の和は2041210ですが，これをfor文かwhile文を使ったプログラムによって計算しなさい．</p>
+</blockquote>
+<h3 id="演習6-2"><a class="header" href="#演習6-2">演習6-2</a></h3>
+<blockquote>
+<p>1以上10000以下の整数で，6の倍数である，または9の倍数である整数の個数を求めなさい．</p>
+</blockquote>
+<h3 id="解答-1"><a class="header" href="#解答-1">解答</a></h3>
+<details><summary>解答</summary><div>
+<p>演習6-1:</p>
+<pre><code class="language-java">int sum=0;
+for(int i=1;i&lt;=2020;i++)sum+=i;
+print(sum);
+</code></pre>
+<p>演習6-2:2222</p>
+<pre><code class="language-java">int cnt=0;
+for(int i=1;i&lt;=10000;i++)if(i%6==0||i%9==0)cnt++;
+print(cnt);
+</code></pre>
+<p>これは，10000/6+10000/9-10000/18と等しいです．</p>
+</div></details>
+<h2 id="二重for文"><a class="header" href="#二重for文">二重for文</a></h2>
+<pre><code class="language-java">size(500,500);
+for(int x=0;x&lt;=500;x+=100)ellipse(x,000,100,100);
+for(int x=0;x&lt;=500;x+=100)ellipse(x,100,100,100);
+for(int x=0;x&lt;=500;x+=100)ellipse(x,200,100,100);
+for(int x=0;x&lt;=500;x+=100)ellipse(x,300,100,100);
+for(int x=0;x&lt;=500;x+=100)ellipse(x,400,100,100);
+for(int x=0;x&lt;=500;x+=100)ellipse(x,500,100,100);
+</code></pre>
+<p>上のfor文は</p>
+<pre><code class="language-java">size(500,500);
+for(int y=0;y&lt;=500;y+=100){
+  for(int x=0;x&lt;=500;x+=100){
+    ellipse(x,y,100,100);
+  }
+}
+</code></pre>
+<p>こうまとめられますね．</p>
+<h3 id="演習6-3"><a class="header" href="#演習6-3">演習6-3</a></h3>
+<blockquote>
+<p>次の画像のように階段状に円を描くにはどうすればよいでしょうか．
+<img src="Processing/img/fig6-3.png" alt="画面" title="画面" /></p>
+</blockquote>
+<h3 id="解答-2"><a class="header" href="#解答-2">解答</a></h3>
+<details><summary>解答</summary><div>
+演習6-3:
+一例です．
+<pre><code class="language-java">size(700,700);
+for(int y=100;y&lt;=600;y+=100){
+  for(int x=100;x&lt;=y;x+=100){
+    ellipse(x,y,100,100);
+  }
+}
+</code></pre>
+</div></details>
+<h1 id="chapter-7関数を作る"><a class="header" href="#chapter-7関数を作る">Chapter 7:関数を作る</a></h1>
+<h2 id="関数とは"><a class="header" href="#関数とは">関数とは</a></h2>
+<p>実は今まで使ってきた<code>rect()</code>や<code>fill()</code>，<code>print()</code>などは関数と呼ばれるものです．</p>
+<p>例えば，<code>rect(x,y,a,b)</code>を実行した場合，
+座標(x,y)を左上の頂点として，横a縦bの長さである長方形が描かれます．<code>print(S);</code>(Sは文字列)は，文字列Sがコンソールに表示されます．
+このように，関数はいくつかの入力(rectの例だとx,y,a,b)に対して何かを行うものです．</p>
+<p>そして，この関数は自分で作ることができます．</p>
+<h1 id="chapter-8配列"><a class="header" href="#chapter-8配列">Chapter 8:配列</a></h1>
+<h2 id="まとめて管理"><a class="header" href="#まとめて管理">まとめて管理</a></h2>
+<p>シューティングゲームなどで，100個の弾の座標を管理したいときに次のように変数を定義していては大変です．</p>
+<pre><code class="language-java">int x1= 4 ,y1=54;
+int x2=15 ,y2= 4;
+int x3=26 ,y3=34;
+...
+int x99=23,y99=2;
+int x100=3,y100=4;
+</code></pre>
+<p>そこで配列です．宣言は次のようにできます．</p>
+<pre><code class="language-java">int x[]=new int [100];
+int y[]=new int [100];
+型名 変数名[]=new 型名 [要素数];
+</code></pre>
+<p><code>new 型名[要素数]</code>を忘れないようにしましょう．</p>
+<pre><code class="language-java">int a[]=new int [4];
+a[0]=3;
+a[1]=1;
+a[2]=4;
+a[3]=1;
+print(a[2]);
+</code></pre>
+<p><code>変数名[インデックス]</code>で配列にアクセスができます．インデックスは0から要素数-1までの整数で指定します．</p>
+<p>要素数が4の場合，a[0],a[1],a[2],a[3]の4つの要素が使える，という意味になります．a[4]は使えません(エラーになります)．
+インデックスが0から始まることに注意です．</p>
+<pre><code class="language-java">int a[]=new int [4];
+a[0]=3;
+a[1]=1;
+a[2]=4;
+a[3]=1;
+for(int i=0;i&lt;4;i++){
+    a[i]=a[i]+1;
+    println(a[i]);
+}
+</code></pre>
+<p>配列は一度に処理をするのに非常に便利です(上の例だとすべてに1を加算している．)
+また，記録機能としても優秀です．</p>
+<pre><code class="language-java">int a[]=new int [10];
+int a[0]=1;
+for(int i=1;i&lt;10;i++)a[i]=a[i-1]*2;
+for(int i=0;i&lt;10;i++)println(a[i]);
+</code></pre>
+<h3 id="演習8-1"><a class="header" href="#演習8-1">演習8-1</a></h3>
+<p>フィボナッチ数列の第20項目はいくつか．
+ただし，フィボナッチ数列は，1,1,2,3,5,8,13,21,...のように初めの二項が1で，それ以降は前の二項の和となっている数列のことである．</p>
+<h3 id="解答-3"><a class="header" href="#解答-3">解答</a></h3>
+<details><summary>解答例:コードを書いてから答えをみよう！</summary><div>
+<p>演習8-1:6765</p>
+<pre><code class="language-java">int a[]=new int [30];
+a[1]=1;a[2]=1;
+for(int i=3;i&lt;=20;i++)a[i]=a[i-1]+a[i-2];
+print(a[20]);
+</code></pre>
+</div></details>
+<h1 id="chapter-9クラスとメンバ"><a class="header" href="#chapter-9クラスとメンバ">Chapter 9:クラスとメンバ</a></h1>
+<h2 id="配列からクラスへ"><a class="header" href="#配列からクラスへ">配列からクラスへ</a></h2>
+<p>配列は便利ですが，複数の情報を持つものが複数あると少しかさばります．具体的には座標，速度，加速度の3要素を持つ直線上の物体が10個あるときに，</p>
+<pre><code class="language-java">int x[]=new int [10];//座標
+int v[]=new int [10];//速度
+int a[]=new int [10];//加速度
+</code></pre>
+<p>このようにコードをかくことができますが，少し冗長ですよね．というのも，x[i]とy[i]とa[i]は同じ物体についての情報であるのに別の配列に入っているという点で少し不便です．そこでそれらをまとめて扱う&quot;クラス&quot;というものを紹介します．</p>
+<pre><code class="language-java">class object{
+    double x;
+    double v;
+    double a;
+}
+</code></pre>
+<p>これでobjectというデータの型が使えるようになります．</p>
+<pre><code class="language-java">object ball;
+ball=new object();
+</code></pre>
+<p>上のコードで，ballという名前のobject型の変数(のようなもの)が宣言されます．普通のint型などの変数とは違って<code>=new クラス名();</code>があることに注意です</p>
+<p>参照と代入は次のように行えます．</p>
+<pre><code class="language-java">ball.x=2.2;
+ball.v=-3.2;
+ball.a=0.1;
+print(ball.x);
+</code></pre>
+<p>配列にする場合，少し手順が複雑になります．</p>
+<pre><code class="language-java">object ball[]=new object[100];
+for(int i=0;i&lt;100;i++)ball[i]=new object();
+
+ball[0].x=2.2;
+ball[0].v=-3.2;
+ball[0].a=0.1;
+
+</code></pre>
+<h1 id="chpater-1設計を考えよう"><a class="header" href="#chpater-1設計を考えよう">Chpater 1:設計を考えよう</a></h1>
+<h2 id="ゲームの構想を練る"><a class="header" href="#ゲームの構想を練る">ゲームの構想を練る</a></h2>
+<p>完成したゲームがこちらになります．</p>
+<p><img src="ProcessingGame/img/pong.gif" alt="pong" title="pong" /></p>
+<p>実際にゲームを作るときにも，ゲーム画面がどんな感じであるかを想像できなければ，プログラミングができません．ということで，上のgif画像のゲームを想像してたとしましょう．これは対戦型ゲームで，p●ngというゲームのパクリです．（上のgif画像でイメージが沸かない場合は調べてみましょう．）</p>
+<p>さて，構成を見ていきましょう．このゲームは，</p>
+<ul>
+<li>ボール</li>
+<li>バーが二つ
+の図形でできています．
+そして，これらがどう動くかを考えます．
+書き出してみると，</li>
+<li>バーは十字キーで操作をする</li>
+<li>ボールを一定の方向に動かす</li>
+<li>ボールが壁に当たったら跳ね返る</li>
+<li>ボールがバーに当たったら跳ね返る</li>
+<li>バーを過ぎたら終了
+といったところでしょうか．
+あとはそれぞれをどう処理するかを考えます．</li>
+</ul>
+<h1 id="chapter-2バーとボールを作ろう"><a class="header" href="#chapter-2バーとボールを作ろう">Chapter 2:バーとボールを作ろう</a></h1>
+<pre><code class="language-java">float ballX=400;
+float ballY=400;
+float ballRad=20;
+
+float mybarX=200;
+float mybarY=700;
+float mybarW=100;
+float mybarH=30;
+
+float combarX=170;
+float combarY=100;
+float combarW=100;
+float combarH=30;
+
+void setup(){
+  size(800,800);
+}
+
+void draw(){
+  clear();
+  ellipse(ballX,ballY,ballRad*2,ballRad*2);
+  rect(mybarX,mybarY,mybarW,mybarH);
+  rect(combarX,combarY,combarW,combarH);
+}
+</code></pre>
+<h1 id="chapter-3バーを動かそう"><a class="header" href="#chapter-3バーを動かそう">Chapter 3:バーを動かそう</a></h1>
+<pre><code class="language-java">float ballX=400;
+float ballY=400;
+float ballRad=10;//半径
+float ballAng=PI/6;//角度
+float ballSpeed=6;//ボールのスピード
+
+float mybarX=200;
+float mybarY=700;
+float mybarW=100;
+float mybarH=30;
+
+float combarX=170;
+float combarY=100;
+float combarW=100;
+float combarH=30;
+
+void setup(){
+  size(800,800);
+}
+
+void draw(){
+  clear();
+  barMove();
+  ballMove();
+  ellipse(ballX,ballY,ballRad*2,ballRad*2);
+  rect(mybarX,mybarY,mybarW,mybarH);
+  rect(combarX,combarY,combarW,combarH);
+}
+
+
+void ballMove(){
+  float newballX=ballX+cos(ballAng)*ballSpeed;
+  float newballY=ballY+sin(ballAng)*ballSpeed;
+  
+  if(newballX&lt;ballRad){
+    newballX=ballRad-newballX;
+    ballAng=PI-ballAng;
+  }
+  
+  if(newballX&gt;=width-ballRad){
+    newballX=(width-ballRad)*2-newballX;
+    ballAng=PI-ballAng;
+  }
+  
+  if(newballY+ballRad&gt;mybarY){
+    if(mybarX&lt;newballX+ballRad &amp;&amp; newballX-ballRad&lt;mybarX+mybarW){
+      ballAng=-ballAng;
+    }
+  }
+  
+  if(newballY-ballRad&lt;combarY+combarH){
+    if(combarX&lt;ballX+ballRad &amp;&amp; newballX-ballRad&lt;combarX+combarW){
+      ballAng=-ballAng;
+    }
+  }
+  
+  ballX=newballX;
+  ballY=newballY;
+}
+
+void barMove(){
+  if(keyPressed == false)return;
+  if(keyCode==LEFT)mybarX-=10;
+  else if(keyCode==RIGHT)mybarX+=10;
+}
+
+
+</code></pre>
+<h1 id="chapter-4ボールを動かそう"><a class="header" href="#chapter-4ボールを動かそう">Chapter 4:ボールを動かそう</a></h1>
+<pre><code class="language-java">float ballX=400;
+float ballY=400;
+float ballRad=10;//半径
+float ballAng=PI/6;//角度
+float ballSpeed=6;//ボールのスピード
+
+float mybarX=200;
+float mybarY=700;
+float mybarW=100;
+float mybarH=30;
+
+float combarX=170;
+float combarY=100;
+float combarW=100;
+float combarH=30;
+
+void setup(){
+  size(800,800);
+}
+
+void draw(){
+  clear();
+  barMove();
+  ballMove();
+  ellipse(ballX,ballY,ballRad*2,ballRad*2);
+  rect(mybarX,mybarY,mybarW,mybarH);
+  rect(combarX,combarY,combarW,combarH);
+}
+
+
+void ballMove(){
+  float newballX=ballX+cos(ballAng)*ballSpeed;
+  float newballY=ballY+sin(ballAng)*ballSpeed;
+  
+  if(newballX&lt;ballRad){
+    newballX=ballRad-newballX;
+    ballAng=PI-ballAng;
+  }
+  
+  if(newballX&gt;=width-ballRad){
+    newballX=(width-ballRad)*2-newballX;
+    ballAng=PI-ballAng;
+  }
+  
+  if(newballY+ballRad&gt;mybarY){
+    if(mybarX&lt;newballX+ballRad &amp;&amp; newballX-ballRad&lt;mybarX+mybarW){
+      ballAng=-ballAng;
+    }
+  }
+  
+  if(newballY-ballRad&lt;combarY+combarH){
+    if(combarX&lt;ballX+ballRad &amp;&amp; newballX-ballRad&lt;combarX+combarW){
+      ballAng=-ballAng;
+    }
+  }
+  
+  ballX=newballX;
+  ballY=newballY;
+}
+
+void barMove(){
+  if(keyPressed == false)return;
+  if(keyCode==LEFT)mybarX-=10;
+  else if(keyCode==RIGHT)mybarX+=10;
+}
+
+
+</code></pre>
+<h1 id="発展平方根"><a class="header" href="#発展平方根">発展:平方根</a></h1>
+<h1 id="コンピュータ上での色の表現"><a class="header" href="#コンピュータ上での色の表現">コンピュータ上での色の表現</a></h1>
+<h2 id="色の指定"><a class="header" href="#色の指定">色の指定</a></h2>
+<p>Processingではfill命令やstroke命令で描画する色をしてすることができます．(r,g,b)はred,green,blueの光の三原色の混じり具合を表しています．それぞれ0~255の整数値で設定できます．</p>
+<p>絵具とは違い，光であるので色が混じると白色に近くなっていきます．次の表に示します．</p>
+<table><thead><tr><th align="left">(r,g,b)</th><th align="left">色</th></tr></thead><tbody>
+<tr><td align="left"><code>(000,000,000)</code></td><td align="left">黒</td></tr>
+<tr><td align="left"><code>(255,255,255)</code></td><td align="left">白</td></tr>
+<tr><td align="left"><code>(255,000,000)</code></td><td align="left">赤</td></tr>
+<tr><td align="left"><code>(000,255,000)</code></td><td align="left">緑</td></tr>
+<tr><td align="left"><code>(000,000,255)</code></td><td align="left">青</td></tr>
+<tr><td align="left"><code>(255,255,000)</code></td><td align="left">黄</td></tr>
+<tr><td align="left"><code>(255,000,255)</code></td><td align="left">紫</td></tr>
+<tr><td align="left"><code>(000,255,255)</code></td><td align="left">水</td></tr>
+</tbody></table>
+<p>デザインの話になりますが，上の表にあるような極端に振った(255とか0)値を含んだ色を使うと，主張が激しく感じます(個人差はありますが)．意図的にそうしたい場合を除いて，実際に色を使う場合は，そのような色を避けて優しい色遣いをするとよいです．</p>
+<p>また，上の表は覚える必要はなく，Processingのツールタブから色選択...を選択すると下の画像のようなウィンドウが出てきます．</p>
+<p><img src="ProcessingOther/img/figc-1.png" alt="color" title="color" /></p>
+<p>これを使えば使いたい色のrgb値がわかります．</p>
+<h1 id="変数の詳しい話"><a class="header" href="#変数の詳しい話">変数の詳しい話</a></h1>
+<h2 id="整数型浮動小数点型"><a class="header" href="#整数型浮動小数点型">整数型，浮動小数点型</a></h2>
+<p>chapter2では<code>int</code>で整数をいれる変数を作れることがわかりました．これによって作られた変数をint型変数，といいます．あるいは，整数が入るので単に整数型とも言います．</p>
+<pre><code class="language-java">float a=1.5;
+float b=1.5;
+print(a*b);//2.25
+</code></pre>
+<p>上のサンプルのように，<code>int</code>の代わりに<code>float</code>を使うと小数を代入することができます．</p>
+<pre><code class="language-java">int a=5;
+int b=3;
+println(a/b);//1
+println(float(a)/b);//1.66666...
+</code></pre>
+<p>整数型同士の割り算は小数点以下を切り捨てられてしまうので，割り算をする前にfloat(a)でfloat型に変換し，切り捨てを行わないようにします．</p>
+<p>さらに精度を良くして数を扱う場合は整数ならlong型，小数ならdouble型を使います．</p>
+<table><thead><tr><th align="left">型名</th><th align="left">代入できる値</th></tr></thead><tbody>
+<tr><td align="left">int</td><td align="left">-2147483648から2147483647の整数</td></tr>
+<tr><td align="left">long</td><td align="left">-9223372036854775808から9223372036854775807の整数</td></tr>
+<tr><td align="left">float</td><td align="left">小数</td></tr>
+<tr><td align="left">double</td><td align="left">float型よりも精度のよい小数</td></tr>
+</tbody></table>
+<p>long型に値を代入する場合，末尾にLをつけないとエラーになることがあります．</p>
+<pre><code class="language-java">long a=9223372036854775807L;//Lをつける
+</code></pre>
+<h1 id="演算子"><a class="header" href="#演算子">演算子</a></h1>
+<h2 id="省略"><a class="header" href="#省略">省略</a></h2>
+<pre><code class="language-java">int apple=0;
+apple=apple+2;
+apple=apple-3;
+apple=apple*5;
+apple=apple/7;
+apple=apple%11;
+</code></pre>
+<p>上の式のように自分自身に対する計算は，短く書くことができます．</p>
+<pre><code class="language-java">int apple=0;
+apple+=2;
+apple-=3;
+apple*=5;
+apple/=7;
+apple%=11;
+</code></pre>
+<p>また，1を足すまたは引く場合はさらに短く書くことができます．</p>
+<pre><code class="language-java">int apple=0;
+apple++;//apple=apple+1と同じ
+apple--;//apple=apple-1と同じ
+</code></pre>
+<p>++を先に書くこともできます．これらは挙動が違います．</p>
+<pre><code class="language-java">int a=0;
+print(a++);
+print(a);
+a=0;
+print(++a);
+print(a);
+</code></pre>
+<h2 id="bit演算子"><a class="header" href="#bit演算子">bit演算子</a></h2>
+<p>bitにかかわる演算子です．</p>
+<table><thead><tr><th align="center">すること</th><th align="center">演算子</th><th align="center">例</th><th align="center">aの値</th></tr></thead><tbody>
+<tr><td align="center">AND</td><td align="center"><code>&amp;</code></td><td align="center"><code>a=1&amp;3</code></td><td align="center"><code>1</code></td></tr>
+<tr><td align="center">OR</td><td align="center">`</td><td align="center">`</td><td align="center">`a=1</td></tr>
+<tr><td align="center">XOR</td><td align="center"><code>^</code></td><td align="center"><code>a=1^3</code></td><td align="center"><code>2</code></td></tr>
+<tr><td align="center">左にビットシフト</td><td align="center"><code>&lt;&lt;</code></td><td align="center"><code>a=1&lt;&lt;3</code></td><td align="center"><code>8</code></td></tr>
+<tr><td align="center">右にビットシフト</td><td align="center"><code>&gt;&gt;</code></td><td align="center"><code>a=4&gt;&gt;1</code></td><td align="center"><code>2</code></td></tr>
+</tbody></table>
+<p>例えば，変数aの2ビット目(一番右を0ビット目とする)が1立っているかどうか(1であるか)を確かめるには，</p>
+<pre><code class="language-java">if((a&amp;(1&lt;&lt;2))!=0)print(&quot;aの2ビット目は立っています&quot;);
+</code></pre>
+<p>で調べることができます．</p>
+<p>応用すると，部分集合が全列挙できます．</p>
+<pre><code class="language-java">int a[]={0,1,2,3,4};
+int size=5;
+
+for(int i=0;i&lt;(1&lt;&lt;size);i++){
+  for(int k=0;k&lt;size;k++){
+    if((i&amp;(1&lt;&lt;k))!=0){
+      print(a[k]);
+    }
+  }
+  print(&quot;\n&quot;);
+}
+</code></pre>
+<h1 id="scratchの命令に置き換えると"><a class="header" href="#scratchの命令に置き換えると">Scratchの命令に置き換えると？</a></h1>
+<table><thead><tr><th align="left">ブロック</th><th align="left">Processing</th></tr></thead><tbody>
+<tr><td align="left"><img src="ProcessingOther/img/if.png" alt="a" title="a" /></td><td align="left"><code>if(a&gt;50){}</code></td></tr>
+<tr><td align="left"><img src="ProcessingOther/img/for.png" alt="a" title="a" /></td><td align="left"><code>for(int i=0;i&lt;10;i++){}</code></td></tr>
+<tr><td align="left"><img src="ProcessingOther/img/and.png" alt="a" title="a" /></td><td align="left"><code>50&lt;a &amp;&amp; a&lt;100</code></td></tr>
+<tr><td align="left"><img src="ProcessingOther/img/else.png" alt="a" title="a" /></td><td align="left"><code>if(a==50){}else{}</code></td></tr>
+<tr><td align="left"><img src="ProcessingOther/img/while.png" alt="a" title="a" /></td><td align="left"><code>a=0;while(!a==50){a=a+1;}</code></td></tr>
+<tr><td align="left"><img src="ProcessingOther/img/def.png" alt="a" title="a" /></td><td align="left"><code>void greeting(string name){print(name);}</code></td></tr>
+</tbody></table>
+<h1 id="サンプルプログラム"><a class="header" href="#サンプルプログラム">サンプルプログラム</a></h1>
+<p>全てShibaken28によって書かれました．一部コードの可読性が著しく低いものがあります．</p>
+<h2 id="時計"><a class="header" href="#時計">時計</a></h2>
+<p><img src="ProcessingSample/img/clock.gif" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">void setup(){
+  size(600,600);
+}
+
+void draw(){
+  fill(0);
+  rect(0,0,width,height);
+  int hy=height/24;
+  int my=height/60;
+  int sy=height/60;
+  stroke(170);
+  fill(255);//白色
+  for(int i=1;i&lt;=hour();i++)rect(0,600-hy*i,200,hy);
+  for(int i=1;i&lt;=minute();i++)rect(200,600-my*i,200,my);
+  for(int i=1;i&lt;=second();i++)rect(400,600-sy*i,200,sy);
+}
+</code></pre>
+</div></details>
+<h2 id="歪み"><a class="header" href="#歪み">歪み</a></h2>
+<p><img src="ProcessingSample/img/y.gif" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">int r=40;
+void setup(){fullScreen();}
+void draw(){
+  clear();noStroke();
+  float X=mouseX,Y=mouseY;
+  for(int x=0;x&lt;=width;x+=r){
+    for(int y=0;y&lt;=height;y+=r){
+      float tx=x,ty=y,d=PI/2;
+      float dx=X-x,dy=Y-y;
+      float l=sqrt(dx*dx+dy*dy);
+      if(X-x!=0)d=atan(dy/dx);
+      else if(Y&gt;y)d=-d;
+      if(X-x&gt;0)d=d-PI;
+      
+      tx+=cos(d)*r*log(l);ty+=sin(d)*r*log(l);
+      circle(tx,ty,r);
+    }
+  }
+}
+</code></pre>
+</div></details>
+<h2 id="波"><a class="header" href="#波">波</a></h2>
+<p><img src="ProcessingSample/img/wave.gif" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">int w=100;
+float wave[]=new float[w];
+float y=400;
+float t=0;
+float x;
+
+void setup(){
+  fullScreen();
+  x=displayWidth;
+}
+
+void draw(){
+  float ww=x/w;
+  background(0);
+  strokeWeight(ww-1);
+  stroke(0,255,255);
+  for(int i=0;i&lt;w;i++){
+    wave[i]=0;
+    float T=120,la=630;
+    float A=25;
+    wave[i]+=A*sin(2*PI*(t/T-i*ww/la));
+    T=70;la=450;
+    A=30;
+    wave[i]+=A*sin(2*PI*(t/T-i*ww/la));
+    T=-200;la=1050;
+    A=20;
+    wave[i]+=A*sin(2*PI*(t/T-i*ww/la));
+    line(i*ww,wave[i]+y,i*ww,displayHeight);
+  }
+  t++;
+}
+</code></pre>
+</div></details>
+<h2 id="波動"><a class="header" href="#波動">波動</a></h2>
+<p><img src="ProcessingSample/img/circle.gif" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">int r=30;
+int X, Y, R;
+void setup() {
+  fullScreen();
+}
+void draw() {
+  background(0);
+  fill(255);
+  noStroke();
+  R+=10;
+  if (mousePressed) {
+    X=mouseX;
+    Y=mouseY;
+    R=0;
+  }
+  for (int x=0; x&lt;2000; x+=r) {
+    for (int y=x%7; y&lt;1500; y+=r) {
+      float d=dist(x, y, X, Y);
+      circle(x, y, r-(R&lt;d+500&amp;&amp;d&lt;R?(-R+d)/10+50:0));
+    }
+  }
+}
+</code></pre>
+</div></details>
+<h2 id="弾幕避け"><a class="header" href="#弾幕避け">弾幕避け</a></h2>
+<p><img src="ProcessingSample/img/danmaku.gif" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">class Point{
+  float x;
+  float y;
+  float d;
+  float s;
+  float far;
+  float r;
+  int t_f=1;
+  color col;
+  Point(float p,float q,float t,float v,float h,color c)
+  {
+    x=p;
+    y=q;
+    d=t;
+    s=v;
+    r=h;
+    col=c;
+  }
+  
+  void go(float p,float q,float t,float v,float h)
+  {
+    x=p;
+    y=q;
+    d=t;
+    s=v;
+    r=h;
+  }
+  
+  void move()
+  {
+    if(s!=0){
+      x=x+cos(radians(d))*s;
+      y=y+sin(radians(d))*s;
+    }
+  }
+  
+  void hit()
+ {
+   if(time&gt;10)
+   {
+     far=sqrt((mouseX-x)*(mouseX-x)+(mouseY-y)*(mouseY-y));
+     if(far&lt;5){t_f=0;}else{t_f=1;}
+   }
+ }
+ 
+ void away()
+ {
+   if(x&gt;width){d=180-d;}
+   else if(x&lt;0){d=180-d;}
+   else if(y&gt;height){d=-d;}
+   else if(y&lt;0){d=-d;}
+ }
+  
+}
+
+Point[] zahyo=new Point[512];
+int use_n=0;
+int rad=0;
+int level=1;
+float time=0; 
+float speed=3;
+int hankei=10;
+int ran=0;
+
+void setup()
+{
+  size(512,512);
+  background(200);
+  noStroke();
+  for(int i=0; i&lt;zahyo.length ;i++)
+  {
+    zahyo[i]=new Point(-64,-64,0,0,-1,color(i,random(255),255));
+  }
+  run();
+}
+
+void draw()
+{
+  fill(255,255,255);
+  rect(0,0,width,height);
+  fill(0,0,0);
+  for(int i=0; i&lt;zahyo.length ;i++)
+  {
+    fill(zahyo[i].col);
+    zahyo[i].move();
+    zahyo[i].away();
+    ellipse(zahyo[i].x,zahyo[i].y,zahyo[i].r,zahyo[i].r);
+  }
+  fill(0,255,0);
+  ellipse(width/2,height/2,40,40);
+  fill(255,0,0);
+  ellipse(mouseX,mouseY,10,10);
+  for(int i=0; i&lt;zahyo.length ;i++)
+  {
+    zahyo[i].hit();
+    if(zahyo[i].t_f==0)
+    {
+      noLoop();
+      textSize(64);
+      text(&quot;GAME OVER&quot;, 0, 300);
+    }
+  }
+  time += 1;
+  textSize(32);
+  text(&quot;balls:&quot;+level, 00, 32);
+  if (time/(20-level/15)==int(time/(20-level/15)))
+  {
+    level+=1;
+    run();
+  }
+}
+
+void incuse()
+{
+  zahyo[use_n].go(width/2,height/2,rad,speed,hankei);
+  use_n += 1;
+  if (use_n&gt;=zahyo.length){use_n=0;}
+}
+
+void run()
+{
+  speed=1.5;
+  hankei=10+int(random(0,10));
+  rad+=7;
+  zahyo[use_n].go(width/2,height/2,rad,speed,hankei);
+  incuse();
+}
+</code></pre>
+</div></details>
+<h2 id="カージオイド"><a class="header" href="#カージオイド">カージオイド</a></h2>
+<p><img src="ProcessingSample/img/card.gif" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">float t=0,x,y;
+void setup(){fullScreen();x=displayWidth/2;y=displayHeight/2;}
+void draw(){
+clear();stroke(255);strokeWeight(3);
+for(float i=0;i&lt;6.28;i+=.0523){
+float r=200*(1+cos(i)*sin(t)*2),s=200*(1+cos(i+.0523)*sin(t)*2);
+for(float j=0;j&lt;6.28;j+=0.419)line(x+r*cos(i+j),y+r*sin(i+j),x+s*cos(i+.0523+j),y+s*sin(i+.0523+j));
+}t+=.03;
+}
+</code></pre>
+</div></details>
+<h2 id="フラクタル"><a class="header" href="#フラクタル">フラクタル</a></h2>
+<p><img src="ProcessingSample/img/frac.png" alt="画面" title="画面" /></p>
+<details><summary>ソースコード</summary><div>
+<pre><code class="language-java">float t=1;
+int cnt=0;
+void setup(){
+  fullScreen();
+}
+
+void d(float cx,float cy,float s,int c,float rd){
+  cnt++;
+  int r=255,g=255,b=255;
+  fill(r,g,b);
+  float x1=cx+cos(0+rd)*s,y1=cy+sin(0+rd)*s;
+  float x2=cx+cos(PI*2/3+rd)*s,y2=cy+sin(PI*2/3+rd)*s;
+  float x3=cx+cos(PI*4/3+rd)*s,y3=cy+sin(PI*4/3+rd)*s;
+  triangle(x1,y1,x2,y2,x3,y3);
+  
+  s/=2;
+  x1=cx+cos(0+rd)*s;y1=cy+sin(0+rd)*s;
+  x2=cx+cos(PI*2/3+rd)*s;y2=cy+sin(PI*2/3+rd)*s;
+  x3=cx+cos(PI*4/3+rd)*s;y3=cy+sin(PI*4/3+rd)*s;
+  if(c&gt;0){
+    //d(cx,cy,s,c-1,rd);
+    d(x1,y1,s,c-1,rd);
+    d(x2,y2,s,c-1,rd);
+    d(x3,y3,s,c-1,rd);
+  }
+}
+
+void draw(){
+  cnt=0;
+  textSize(100);
+  background(0);
+  fill(255);
+  d(displayWidth/2,displayHeight/2,1000,6,PI/6);
+  t=PI/3;
+}
+</code></pre>
+</div></details>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -307,7 +1717,9 @@
         
         <script type="text/javascript">
         window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
         });
         </script>
         
