@@ -32,4 +32,5 @@
 
 - [サンプルプログラム](ProcessingSample/all.md)
 
-- [Git/GitHub講座](./git/README.md)
+- [Git / GitHub講座](./git/README.md)
+  - [Git / GitHubを始める](./git/01_setup.md)
