@@ -289,7 +289,7 @@ ex.) $HOME/prac-kickstart/echo
 
 （余談）  
 `SHELL`にはたくさんの種類がある。  
-有名なのは、`/bin/bash`、`/bin/zsh`、`/bin/fish`あたり  
+有名なのは、`bash`、`zsh`、`fish`あたり  
 
 それぞれ、設定ファイルというものがある（`.bash_profile`, `.zshrc`...etc）  
 私は、設定ファイルの記述をミスって保存(正確には`source`)してしまい
