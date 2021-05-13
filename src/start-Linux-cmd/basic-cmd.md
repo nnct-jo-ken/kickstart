@@ -27,7 +27,6 @@
 ex.) $HOME/kickstart-programming/  
 
 <img src="../images/ls.png" width=50%>
-<!-- ![](../images/ls.png) -->
 
 ﾆｲﾁｬﾝ「**`ls`は`list`の略と理解すると覚えやすいよ。**」  
 
@@ -59,7 +58,6 @@ ex.) $HOME/
 
 
 <img src="../images/mkdir.png" width=50%>
-<!-- ![](../images/mkdir.png) -->
 
 ﾆｲﾁｬﾝ「**`mkdir`は`make directory`の略と理解すると覚えやすいよ。**」  
 
@@ -98,7 +96,6 @@ ex.) $HOME/ (`-p`オプションあり）
 ex.) $Home/
 
 <img src="../images/cd.png" width=50%>
-<!-- ![](../images/cd.png) -->
 
 ﾆｲﾁｬﾝ「**`cd`は`change directory`の略と理解すると覚えやすいよ。**」  
 
@@ -123,7 +120,6 @@ ex.) $Home/
 ex.) $HOME/prac-kickstart/
 
 <img src="../images/touch.png" width=50%>
-<!-- ![](../images/touch.png) -->
 
 ﾆｲﾁｬﾝ「`ls`してみると`jo-ken.txt`というファイルが出来てるね！」  
 ﾆｲﾁｬﾝ「`touch`が何の略か知らないけど、」  
@@ -144,7 +140,6 @@ ex.) $HOME/prac-kickstart/
 ex.) $HOME/prac-kickstart/
 
 <img src="../images/rm.png" width=50%>
-<!-- ![](../images/rm.png) -->
 
 弟「なーるーほーどー(ﾌﾑﾌﾑ)」  
 ﾆｲﾁｬﾝ「（どこかで聞いたような・・・気のせいか）」  
@@ -158,14 +153,12 @@ directoryを消したい場合は、`rm`だけでは消せません。
 ex.) $HOME/prac-kickstart/
 
 <img src="../images/rm-r_1.png" width=50%>
-<!-- ![](../images/rm-r_1.png) -->
 
 `rm: filname: is a directory`（これはディレクトリですよ）と言われて
 削除できません。  
 そこで`-r`オプションを付与してあげます。  
 
 <img src="../images/rm-r_2.png" width=50%>
-<!-- ![](../images/rm-r_2.png) -->
 
 任意のdirectoryを消すことが出来ます。  
 
@@ -190,12 +183,10 @@ ex.) $HOME/prac-kickstart/
 > $HOME/prac-kickstart/move.txtとなっていれば良い)
 
 <img src="../images/create-directory-file_mv.png" width=50%>
-<!-- ![](../images/create-directory-file_mv.png) -->
 
 ex.) $HOME/prac-kickstart
 
 <img src="../images/mv.png" width=50%>
-<!-- ![](../images/mv.png) -->
 
 > Usage: mv: mv <移動されるfile> <移動するdirectory>  
 > コマンドを打つときのイメージは、左から右に移動する感じだよ
@@ -216,7 +207,6 @@ ex.) $HOME/prac-kickstart
 ex.) $HOME/prac-kickstart
 
 <img src="../images/mv_name.png" width=50%>
-<!-- ![](../images/mv_name.png) -->
 
 > Usage: mv: mv <変更前のfile名> <変更後のfile名>  
 
@@ -240,7 +230,6 @@ ex.) $HOME/prac-kickstart
 ex.) $HOME/prac-kickstart/aft-move/
 
 <img src="../images/cat.png" width=50%>
-<!-- ![](../images/cat.png) -->
 
 > Usage: cat: cat <表示したいfile名>  
 
@@ -252,7 +241,6 @@ ex.) $HOME/prac-kickstart/aft-move/
 ex.) $HOME/prac-kickstart/aft-move/
 
 <img src="../images/cat2.png" width=50%>
-<!-- ![](../images/cat2.png) -->
 
 > Usage: cat: cat <表示したいfile名1> <表示したいfile名2>
 
@@ -291,7 +279,6 @@ echo $SHELL
 ex.) $HOME/prac-kickstart/echo
 
 <img src="../images/echo.png" width=70%>
-<!-- ![](../images/echo.png) -->
 
 ﾆｲﾁｬﾝ「`echo "Programming is so fun" > written.txt`を分解すると」  
 ﾆｲﾁｬﾝ「`echo`, `"Programming is so fun"`, `>`, `written.txt`に分けられて、」  
