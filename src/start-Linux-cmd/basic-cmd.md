@@ -289,7 +289,7 @@ ex.) $HOME/prac-kickstart/echo
 
 （余談）  
 `SHELL`にはたくさんの種類がある。  
-有名なのは、`bash`、`zsh`、`fish`あたり  
+有名なのは、`bash`、`zsh`、`dash`[^4]、`fish`あたり  
 
 それぞれ、設定ファイルというものがある（`.bash_profile`, `.zshrc`...etc）  
 私は、設定ファイルの記述をミスって保存(正確には`source`)してしまい
@@ -348,3 +348,4 @@ ex.) $HOME/prac-kickstart/grep
 [^1]: typoとは「打ち間違い」のこと  
 [^2]: `ln`: シンボリックリンクを貼る  
 [^3]: `chmod`: 権限の変更  
+[^4]: `dash`はUbuntuで使われているShell  
