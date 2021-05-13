@@ -35,3 +35,8 @@ App StoreからXCodeをイントールすれば勝手についてきます。
 brew update
 brew install git
 ```
+
+## GitHubのアカウント登録
+
+[ここから](https://github.com/join)GitHubのアカウント登録を行ってください。
+(GitHubは利用規約で複数アカウントの所持が禁止されているため解説できません。申し訳ありません。)
