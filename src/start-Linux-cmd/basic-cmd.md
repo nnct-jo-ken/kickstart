@@ -347,4 +347,4 @@ ex.) $HOME/prac-kickstart/grep
 
 [^1]: typoとは「打ち間違い」のこと  
 [^2]: `ln`: シンボリックリンクを貼る  
-[^3]: `chmod`: 権限の付与  
+[^3]: `chmod`: 権限の変更  
