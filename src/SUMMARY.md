@@ -5,3 +5,4 @@
     - [directory is 何？](./start-linux-cmd/whatisdir.md)
     - [Linux コマンド is 何？](./start-linux-cmd/whatislinuxcmd.md)
     - [Linux コマンド](./start-linux-cmd/basic-cmd.md)
+    - [補足資料](./sup-doc/sup-doc.md)
