@@ -10,6 +10,7 @@ ex.) $HOME[^2]/kickstart-programming/src
 <img src="../images/dir.png" width=50%>
 
 ﾆｲﾁｬﾝ「フォルダじゃなくて、`directory`という表現を用いるから覚えておこう！」  
+（GUI(Graphical User Interface)ならフォルダ、CUI(Character User Interface)ならディレクトリという風に使い分けるよ）  
 
 弟「なるほど！フォルダっていう風に思えばいいのか！」  
 
