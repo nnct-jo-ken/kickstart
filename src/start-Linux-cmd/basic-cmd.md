@@ -183,8 +183,8 @@ ex.) $HOME/prac-kickstart/
 
 > $HOME/prac-kickstart下に[mkdirコマンド](#mkdirコマンド)と
 > [touchコマンド](#touchコマンド)を使って`aft-move`というdirectoryと
-> `move.txt`というファイルを作ろう(PATHは、$HOME/prac-kickstart/aft-move ,
-> $HOME/prac-kickstart/move.txtとなっていれば良い)
+> `move.txt`というファイルを作ろう($HOME/prac-kickstart/aft-move ,
+> $HOME/prac-kickstart/move.txtが存在すればいい)
 
 <img src="../images/create-directory-file_mv.png" width=50%>
 
