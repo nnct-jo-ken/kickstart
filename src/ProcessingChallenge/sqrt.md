@@ -44,3 +44,5 @@ float fun(float a){
     return (l+r)/2;
 }
 ```
+
+例えば，100の平方根を求めるときに50の
