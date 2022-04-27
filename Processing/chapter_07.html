@@ -4,50 +4,29 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Chapter 7:関数を作る - Kickstart Programming</title>
-        
-        
-
-
         <!-- Custom HTML head -->
-        
-
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="../favicon.svg">
-        
-        
         <link rel="shortcut icon" href="../favicon.png">
-        
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
-        
         <link rel="stylesheet" href="../css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="../fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-
-        
         <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -106,7 +85,6 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
@@ -123,29 +101,23 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Kickstart Programming</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -153,8 +125,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -173,72 +143,134 @@
 座標(x,y)を左上の頂点として，横a縦bの長さである長方形が描かれます．<code>print(S);</code>(Sは文字列)は，文字列Sがコンソールに表示されます．
 このように，関数はいくつかの入力(rectの例だとx,y,a,b)に対して何かを行うものです．</p>
 <p>そして，この関数は自分で作ることができます．</p>
+<h2 id="引数"><a class="header" href="#引数">引数</a></h2>
+<p><code>rect(x,y,a,b);</code>について，x,y,a,bをそれぞれ引数(ひきすう)と呼びます．
+また，引数それぞれには型が決まっていてrectの場合はfloat型です</p>
+<h2 id="関数を作る"><a class="header" href="#関数を作る">関数を作る</a></h2>
+<p>関数を次のようにして定義できます．</p>
+<pre><code class="language-java">void 関数名(型 仮引数名，型 仮引数名，......){
+    //
+}
+</code></pre>
+<p>例です．</p>
+<pre><code class="language-java">void setup(){
+    size(600,600);
+}
+
+void draw(){
+    face(100,100);
+    face(300,100);
+}
+
+void face(int x,int y){//座標(x,y)に顔を描く
+    fill(255,255,255);
+    ellipse(x,y,200,200);
+    fill(0,0,0);
+    ellipse(x-50,y-20,50,50);
+    ellipse(x+50,y-20,50,50);
+    line(x-50,y+50,x+50,y+50);
+}
+</code></pre>
+<p>この例ではface(x,y)という関数を作っています．</p>
+<p><img src="img/voidfun.svg" alt="" /></p>
+<p>引数は個数はいくつでもよいです．</p>
+<pre><code class="language-java">int x=0,y=0;
+
+void setup(){
+    size(600,600);
+}
+
+void draw(){
+    clearScreen();
+    face(x,y);
+    x=x+4;y=y+3;
+    if(x&gt;700)x=-100;
+    if(y&gt;700)y=-100;
+}
+
+void clearScreen(){//引数が0個の関数
+    fill(255,255,255);
+    rect(0,0,600,600);
+}
+
+
+void face(int x,int y){//座標(x,y)に顔を描く
+    fill(255,255,255);
+    ellipse(x,y,200,200);
+    fill(0,0,0);
+    ellipse(x-50,y-20,50,50);
+    ellipse(x+50,y-20,50,50);
+    line(x-50,y+50,x+50,y+50);
+}
+
+</code></pre>
+<p><code>clearScreen()</code>という関数を作りました．引数が0個であり一見何の意味も成してないように見えますが，</p>
+<pre><code class="language-java">fill(255,255,255);
+rect(0,0,600,600);
+</code></pre>
+<p>が</p>
+<pre><code class="language-java">clearScreen();
+</code></pre>
+<p>で，画面を真っ白にするという表現になったことで，何をしているかがわかりやすくなっています．
+このように，関数の定義による一連の動作の抽象化はコードの可読性が増し，汎用性も高くなります．</p>
+<h2 id="戻り値のある関数"><a class="header" href="#戻り値のある関数">戻り値のある関数</a></h2>
+<p>戻り値がある関数は次のように書けます．</p>
+<pre><code class="language-java">戻り値の型 関数名(型 仮引数名，型 仮引数名，......){
+    return 戻り値;
+}
+</code></pre>
+<p>使い方の例です．</p>
+<pre><code class="language-java">/*(x1,y1)と(x2,y2)のユークリッド距離を求める*/
+float distance(float x1,float y1,float x2,float y2){
+    float dif_x=x1-x2;
+    float dif_y=y1-y2;
+    return sqrt(dif_x*dif_x+dif_y*dif_y);
+}
+
+void setup(){
+    float a=distance(0,0,1.4,1.4);
+    println(a);
+}
+</code></pre>
+<p><img src="img/floatfun.svg" alt="" /></p>
+<p>ちなみに，二つの点の距離がわかれば円の衝突判定をすることができますので考えてみてください．</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="../Processing/chapter_06.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="../Processing/chapter_08.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="../Processing/chapter_06.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="../Processing/chapter_08.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

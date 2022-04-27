@@ -4,50 +4,29 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Chapter 6:繰り返し処理 - Kickstart Programming</title>
-        
-        
-
-
         <!-- Custom HTML head -->
-        
-
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="../favicon.svg">
-        
-        
         <link rel="shortcut icon" href="../favicon.png">
-        
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
-        
         <link rel="stylesheet" href="../css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="../fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-
-        
         <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -106,7 +85,6 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
@@ -123,29 +101,23 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Kickstart Programming</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -153,8 +125,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -167,24 +137,35 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="chapter-6繰り返し処理"><a class="header" href="#chapter-6繰り返し処理">Chapter 6:繰り返し処理</a></h1>
+<h2 id="前提知識"><a class="header" href="#前提知識">前提知識</a></h2>
+<p><a href="../ProcessingOther/operator.html">補足資料/演算子</a></p>
 <h2 id="まえおき"><a class="header" href="#まえおき">まえおき</a></h2>
 <p>processingで次の画像のようなものを描くプログラムを作るにはどうすればよいでしょうか．
 <img src="img/fig6-1.png" alt="画面" title="画面" /></p>
 <p>ellipse命令を羅列して地獄になる予感がします．そこで，同じ処理や似たような処理を行うのがwhile文，for文です．</p>
+<pre><code class="language-java">size(800,800);
+
+ellipse(0,0,50,50);
+ellipse(100,0,50,50);
+ellipse(200,0,50,50);
+ellipse(300,0,50,50);
+ellipse(400,0,50,50);
+//...大変
+</code></pre>
 <h2 id="while文"><a class="header" href="#while文">while文</a></h2>
-<p>whileには「～の間」という意味があります(接続詞として逆接の意味も持ちますが)．
+<p>whileには「～の間」という意味があります．
 プログラム上でも意味は同じで，「Aが正しい間，Bを繰り返し実行」する場合は</p>
 <pre><code class="language-java">while(A){
     B
 }
 </code></pre>
 <p>と書きます．Aにはif文でも使用した条件式が入ります．</p>
-<table><thead><tr><th align="center">条件式</th><th align="center">日本語</th></tr></thead><tbody>
-<tr><td align="center"><code>a==b</code></td><td align="center">aとbが等しい</td></tr>
-<tr><td align="center"><code>a&gt;b</code></td><td align="center">aがbより大きい</td></tr>
-<tr><td align="center"><code>a&gt;=b</code></td><td align="center">aがb以上</td></tr>
-<tr><td align="center"><code>a&lt;b</code></td><td align="center">aがbより小さい</td></tr>
-<tr><td align="center"><code>a&lt;=b</code></td><td align="center">aがb以下</td></tr>
+<table><thead><tr><th style="text-align: center">条件式</th><th style="text-align: center">日本語</th></tr></thead><tbody>
+<tr><td style="text-align: center"><code>a==b</code></td><td style="text-align: center">aとbが等しい</td></tr>
+<tr><td style="text-align: center"><code>a&gt;b</code></td><td style="text-align: center">aがbより大きい</td></tr>
+<tr><td style="text-align: center"><code>a&gt;=b</code></td><td style="text-align: center">aがb以上</td></tr>
+<tr><td style="text-align: center"><code>a&lt;b</code></td><td style="text-align: center">aがbより小さい</td></tr>
+<tr><td style="text-align: center"><code>a&lt;=b</code></td><td style="text-align: center">aがb以下</td></tr>
 </tbody></table>
 <p>プログラムを見てみましょう．</p>
 <pre><code class="language-java">int hp=20;
@@ -196,8 +177,26 @@ while(hp&gt;0){
 print(&quot;GAME OVER&quot;);
 </code></pre>
 <p>動作の確認をするために，一個ずつ命令の通りにしたがってシュミレーションしてみましょう．</p>
-<p>注意するのは，hp&gt;0による，まだ繰り返すか否かを中括弧の終わりのところで審査することです．p=hp-attackでもしhp&gt;0を満たしてなくても，中括弧が閉じているところまでの命令は実行され，print(hp);を実行した後にhp&gt;0の判定が行われます．</p>
-<p>while文を使えば，次のようにすることで100回繰り返すことができます．</p>
+<ul>
+<li>hp=20,attack=6として変数が宣言</li>
+<li>while文に入る
+<ul>
+<li>hp&gt;0であるため，中括弧<code>{}</code>内を実行する</li>
+<li>hp=20-6=14となり，14が表示される</li>
+<li>hp&gt;0であるため，中括弧内を実行する</li>
+<li>hp=14-6=8となり，8が表示される</li>
+<li>hp&gt;0であるため，中括弧内を実行する</li>
+<li>hp=8-6=2となり，2が表示される</li>
+<li>hp&gt;0であるため，中括弧内を実行する</li>
+<li>hp=2-6=-4となり，-4が表示される</li>
+<li>hp&gt;0を満たしていないため，while文を抜ける</li>
+</ul>
+</li>
+<li><code>GAME OVER</code>と表示される</li>
+</ul>
+<p>注意するのは，<strong>まだ繰り返すか否かを判定する場所です</strong>．
+上の例では，<code>p=hp-attack</code>の時点で<code>hp=-4</code>で<code>hp&gt;0</code>を満たしていませんが，その後の<code>print(hp)</code>は実行されています．これは，中括弧内の一連の処理を終えてから，まだループするかどうかの判定<code>hp&gt;0</code>を行っているからです．
+while文を使えば，次のよう<sup class="footnote-reference"><a href="#1">1</a></sup>にすることで100回繰り返すことができます．</p>
 <pre><code class="language-java">int i=1;
 while(i&lt;=100){
     print(i);
@@ -206,6 +205,9 @@ while(i&lt;=100){
 </code></pre>
 <p>ここで，変数iは繰り返し回数を表していますが，繰り返し処理を行うたびにいちいち準備するのは大変です．
 そこで，便利なのがfor文です．</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p><code>i++</code>という書き方については<a href="../ProcessingOther/operator.html">補足資料/演算子</a>をご覧ください</p>
+</div>
 <p>##　for文</p>
 <p>for文の書式は次の通りです．</p>
 <pre><code class="language-java">for(変数の宣言;条件式;1回繰り返したあとに行う処理){
@@ -216,8 +218,27 @@ while(i&lt;=100){
     print(i);
 }
 </code></pre>
-<p>つまり，上のコードは1回for文内を実行してiを+1することをi&lt;=100の間繰り返す，という意味になります．</p>
-<p>while文と違って，</p>
+<p>つまり，上のコードは，</p>
+<ul>
+<li>始めにi=0と宣言</li>
+<li><code>i&lt;=100</code>を満たしている間，次を繰り返す
+<ul>
+<li><code>i</code>を表示する</li>
+<li><code>i</code>を1増やす</li>
+</ul>
+</li>
+</ul>
+<p>while文と挙動が似ていますね．次のように書き換えることができます<sup class="footnote-reference"><a href="#2">2</a></sup>．</p>
+<pre><code class="language-java">int i=1;
+while(i&lt;=000){
+  print(i);
+  i++;
+}
+</code></pre>
+<div class="footnote-definition" id="2"><sup class="footnote-definition-label">2</sup>
+<p>実は，変数<code>i</code>のスコープは異なります．詳しくは<a href="../ProcessingOther/var.html">補足資料/変数の詳しい話</a> をご覧ください</p>
+</div>
+<p>for文は，</p>
 <ul>
 <li>繰り返し用の変数の宣言</li>
 <li>繰り返し用の変数への加算</li>
@@ -225,29 +246,86 @@ while(i&lt;=100){
 を同時に設定することができるます．</li>
 </ul>
 <p>使い分けですが，繰り返す回数が決まっている場合はすっきり書けるfor文，そうでない場合はwhile文を使うことが多いです．</p>
+<p>次のように図形をたくさん連ねる処理を簡単にかけるのはfor，whileの強みです．</p>
+<pre><code class="language-java">size(800,300);
+
+for(int x=50;x&lt;800;x+=100){
+  ellipse(x,150,100,100);
+  //中心(x,150),半径100の円
+}
+</code></pre>
+<p><img src="img/fig6-4.png" alt="画面" title="画面" /></p>
 <h3 id="演習6-1"><a class="header" href="#演習6-1">演習6-1</a></h3>
 <blockquote>
-<p>1から2020までの整数の和は2041210ですが，これをfor文かwhile文を使ったプログラムによって計算しなさい．</p>
+<p>1から100までの整数の和は5050ですが，これをfor文かwhile文を使ったプログラムによって計算しなさい．</p>
 </blockquote>
 <h3 id="演習6-2"><a class="header" href="#演習6-2">演習6-2</a></h3>
 <blockquote>
-<p>1以上10000以下の整数で，6の倍数である，または9の倍数である整数の個数を求めなさい．</p>
+<p>上の円を横に連なった絵を描くプログラムをwhile文を使って書きなさい．</p>
 </blockquote>
 <h3 id="解答"><a class="header" href="#解答">解答</a></h3>
 <details><summary>解答</summary><div>
-<p>演習6-1:</p>
+<p>演習6-1: 5050です．<code>100*(100+1)/2</code>と計算できます．</p>
 <pre><code class="language-java">int sum=0;
-for(int i=1;i&lt;=2020;i++)sum+=i;
+for(int i=1;i&lt;100;i++)sum+=i;
 print(sum);
 </code></pre>
-<p>演習6-2:2222</p>
-<pre><code class="language-java">int cnt=0;
-for(int i=1;i&lt;=10000;i++)if(i%6==0||i%9==0)cnt++;
-print(cnt);
+<p>繰り返す処理が1文の場合は
+中括弧を省略することができます．</p>
+<p>演習6-2:</p>
+<pre><code class="language-java">size(800,300);
+
+int x = 50;
+while(x&lt;800){
+  ellipse(x,150,100,100);
+  x+=100;
+}
 </code></pre>
-<p>これは，10000/6+10000/9-10000/18と等しいです．</p>
 </div></details>
+<h2 id="たくさんの図形を動かそう"><a class="header" href="#たくさんの図形を動かそう">たくさんの図形を動かそう</a></h2>
+<p>次のようにたくさんの図形を描いて動かすことができます．</p>
+<pre><code class="language-java">int x=0;
+
+void setup(){
+  size(800,300);
+}
+
+void draw(){
+  fill(0);
+  rect(0,0,800,300);
+  fill(255);
+  for(int dx=-50;dx&lt;=800;dx+=50){
+    ellipse(x+dx, 150, 50, 50);
+  }
+  x++;
+}
+</code></pre>
+<p><img src="img/fig6-6.gif" alt="画面" title="画面" /></p>
+<p>draw()内の最後(<code>}</code>の前)に<code>if(x&gt;=50)x=0;</code>を追加してみましょう</p>
+<p><img src="img/fig6-5.gif" alt="画面" title="画面" /></p>
+<p>三角関数と組み合わせて，角度をfor文で回すことも可能です．</p>
+<pre><code class="language-java">float r=0;
+
+void setup(){
+  size(600,600);
+}
+
+void draw(){
+  fill(0);
+  rect(0,0,600,600);
+  fill(255);
+  for(float a=0;a&lt;=2*PI*0.8;a+=0.5){
+    ellipse(300+cos(a+r)*200,300+sin(a+r)*200,50,50);
+  }
+  r+=0.1;
+  if(r&gt;2*PI)r-=2*PI;
+}
+</code></pre>
+<p><img src="img/fig6-7.gif" alt="画面" title="画面" /></p>
+<p>ここまで勉強したことだけでも，様々な表現ができそうですね．是非試してみてください．</p>
 <h2 id="二重for文"><a class="header" href="#二重for文">二重for文</a></h2>
+<p><img src="img/fig6-8.png" alt="画面" title="画面" /></p>
+<p>各行に対して，for文で円を連ねています．</p>
 <pre><code class="language-java">size(500,500);
 for(int x=0;x&lt;=500;x+=100)ellipse(x,000,100,100);
 for(int x=0;x&lt;=500;x+=100)ellipse(x,100,100,100);
@@ -267,13 +345,29 @@ for(int y=0;y&lt;=500;y+=100){
 <p>こうまとめられますね．</p>
 <h3 id="演習6-3"><a class="header" href="#演習6-3">演習6-3</a></h3>
 <blockquote>
+<p>次の画像のようなマス目を書いてみましょう．
+<img src="img/fig6-9.png" alt="画面" title="画面" /></p>
+</blockquote>
+<p>また，次の演習問題のようなこともできます．</p>
+<h3 id="演習6-4"><a class="header" href="#演習6-4">演習6-4</a></h3>
+<blockquote>
 <p>次の画像のように階段状に円を描くにはどうすればよいでしょうか．
 <img src="img/fig6-3.png" alt="画面" title="画面" /></p>
 </blockquote>
 <h3 id="解答-1"><a class="header" href="#解答-1">解答</a></h3>
 <details><summary>解答</summary><div>
-演習6-3:
-一例です．
+<p>一例です．</p>
+<p>演習6-3:</p>
+<pre><code class="language-java">size(500,500);
+
+for(int x=0;x&lt;500;x+=50){
+  for(int y=0;y&lt;500;y+=50){
+    rect(x,y,49,49);
+  }
+}
+</code></pre>
+<p>line関数でも描くことができます．</p>
+<p>演習6-4:</p>
 <pre><code class="language-java">size(700,700);
 for(int y=100;y&lt;=600;y+=100){
   for(int x=100;x&lt;=y;x+=100){
@@ -287,67 +381,38 @@ for(int y=100;y&lt;=600;y+=100){
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="../Processing/chapter_05.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="../Processing/chapter_07.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="../Processing/chapter_05.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="../Processing/chapter_07.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

@@ -4,50 +4,29 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Chapter 3:変数 - Kickstart Programming</title>
-        
-        
-
-
         <!-- Custom HTML head -->
-        
-
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="../favicon.svg">
-        
-        
         <link rel="shortcut icon" href="../favicon.png">
-        
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
-        
         <link rel="stylesheet" href="../css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="../fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
-
-        
         <!-- MathJax -->
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -106,7 +85,6 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
@@ -123,29 +101,23 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Kickstart Programming</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -153,8 +125,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -245,12 +215,12 @@ a=1+3;
 print(a);
 </code></pre>
 <p>このように式で代入することもできます．</p>
-<table><thead><tr><th align="center">すること</th><th align="center">演算子</th><th align="center">例</th><th align="center">aの値</th></tr></thead><tbody>
-<tr><td align="center">足し算</td><td align="center"><code>+</code></td><td align="center"><code>a=24+41</code></td><td align="center"><code>65</code></td></tr>
-<tr><td align="center">引き算</td><td align="center"><code>-</code></td><td align="center"><code>a=5-12</code></td><td align="center"><code>-7</code></td></tr>
-<tr><td align="center">掛け算</td><td align="center"><code>*</code></td><td align="center"><code>a=25*8</code></td><td align="center"><code>200</code></td></tr>
-<tr><td align="center">割り算<sup class="footnote-reference"><a href="#3">3</a></sup></td><td align="center"><code>/</code></td><td align="center"><code>a=76/19</code></td><td align="center"><code>4</code></td></tr>
-<tr><td align="center">割った余り<sup class="footnote-reference"><a href="#4">4</a></sup></td><td align="center"><code>%</code></td><td align="center"><code>a=25%4</code></td><td align="center"><code>1</code></td></tr>
+<table><thead><tr><th style="text-align: center">すること</th><th style="text-align: center">演算子</th><th style="text-align: center">例</th><th style="text-align: center">aの値</th></tr></thead><tbody>
+<tr><td style="text-align: center">足し算</td><td style="text-align: center"><code>+</code></td><td style="text-align: center"><code>a=24+41</code></td><td style="text-align: center"><code>65</code></td></tr>
+<tr><td style="text-align: center">引き算</td><td style="text-align: center"><code>-</code></td><td style="text-align: center"><code>a=5-12</code></td><td style="text-align: center"><code>-7</code></td></tr>
+<tr><td style="text-align: center">掛け算</td><td style="text-align: center"><code>*</code></td><td style="text-align: center"><code>a=25*8</code></td><td style="text-align: center"><code>200</code></td></tr>
+<tr><td style="text-align: center">割り算<sup class="footnote-reference"><a href="#3">3</a></sup></td><td style="text-align: center"><code>/</code></td><td style="text-align: center"><code>a=76/19</code></td><td style="text-align: center"><code>4</code></td></tr>
+<tr><td style="text-align: center">割った余り<sup class="footnote-reference"><a href="#4">4</a></sup></td><td style="text-align: center"><code>%</code></td><td style="text-align: center"><code>a=25%4</code></td><td style="text-align: center"><code>1</code></td></tr>
 </tbody></table>
 <div class="footnote-definition" id="3"><sup class="footnote-definition-label">3</sup>
 <p>整数同士で割り算をすると，小数点以下は切り捨てられます．10/3=3,3/4=0となります．</p>
@@ -269,9 +239,14 @@ int volume=side*side*side;
 print(volume);
 </code></pre>
 <p>演算は括弧を使うことも可能です．</p>
-<pre><code class="language-java">int a=5,b=3;
+<pre><code class="language-java">int a=5;
+int b=3;
 int c=(a+b)*(a-b);//8*2
 print(c);//16
+</code></pre>
+<p>一行目ですが，</p>
+<pre><code class="language-java">int a=5;
+int b=3;
 </code></pre>
 <p>次のコードを確認しましょう．</p>
 <pre><code class="language-java">int a=5;
@@ -282,17 +257,19 @@ print(a);
 <p>プログラムは上から下へ順番に，書いてあること通りに実行されていきます．これは，当たり前のように感じますが，慣れていない頃は意外と忘れがちです．</p>
 <p>また，セミコロンで区切ってさえあれば同じ行に命令を連ねることができますが，これは左から順番に実行されていきます．
 次のソースコードでは，<code>a=b</code>と<code>b=a</code>が同じ行にあり，同時に実行するように見えるかもしれませんが，そんなことはありません．<code>a=b;</code>のあとに改行したコードと全く同じ意味になります．</p>
-<pre><code class="language-java">int a=5,b=3;
+<pre><code class="language-java">int a=5;
+int b=3;
 a=b;b=a;
 print(a,b);
 </code></pre>
-<pre><code class="language-java">int a=5,b=3;
+<pre><code class="language-java">int a=5;
+int b=3;
 a=b;
 b=a;
 print(a,b);
 </code></pre>
 <p>逆に，一行に詰め込むことも可能です．</p>
-<pre><code class="language-java">int a=5,b=3;a=b;b=a;print(a,b);
+<pre><code class="language-java">int a=5;int b=3;a=b;b=a;print(a,b);
 </code></pre>
 <h3 id="演習3-1"><a class="header" href="#演習3-1">演習3-1</a></h3>
 <blockquote>
@@ -307,7 +284,8 @@ print(b);
 <h3 id="演習3-2"><a class="header" href="#演習3-2">演習3-2</a></h3>
 <blockquote>
 <p>二つの変数の値を入れ替えるにはどうすればよいか</p>
-<pre><code class="language-java">int a=5,b=3;
+<pre><code class="language-java">int a=5;
+int b=3;
 //何らかの処理
 print(a,b);//a=3,b=5を得たい
 </code></pre>
@@ -321,7 +299,8 @@ b=a-b;//b=8-3 bが5
 </code></pre>
 <p>演習3-2：
 別の変数を用意すると簡単に実現できます</p>
-<pre><code class="language-java">int a=5,b=3;
+<pre><code class="language-java">int a=5;
+int b=3;
 int t;
 t=a //tにaの値を取っておく
 a=b; //aに上書きされても
@@ -342,80 +321,62 @@ line(250,350,350,350);
 <p>チャプター2で出てきた顔です．
 どうしてもこの顔が気に入らなければ別の絵を用意してもらって構いません．</p>
 <p>この顔をもう少し右に表示させたくなったとします．そうなると，顔を作っている全ての関数のx座標の値を変えなければなりません．手間です．さらに変更したくなったらまたまたひとつずつ書き換えなければなりません．非常に面倒ですね．そこで，次のように変数を使います．</p>
-<pre><code class="language-java">size(600,600);
--ellipse(300,300,200,200);
+<pre><code class="language-java">int x=300;
+int y=300;
+size(600,600);
+ellipse(x,y,200,200);
 fill(0,0,0);
--ellipse(250,280,50,50);
--ellipse(350,280,50,50);
--line(250,350,350,350);
+ellipse(x-50,y-20,50,50);
+ellipse(x+50,y-20,50,50);
+line(x-50,y+50,x+50,y+50);
 </code></pre>
 <p>これで，一行目のxとyの初期値さえ変えれば，顔の位置を移動させることができるようになりました．このように，複数の場所に関与して来る数は変数にしておくと汎用性が高くなります．</p>
+<h2 id="連ねて宣言"><a class="header" href="#連ねて宣言">連ねて宣言</a></h2>
+<pre><code class="language-java">int a=3;
+int b=5;
+int c=2;
+</code></pre>
+<p>のように毎回<code>int</code>を書くのが面倒だという場合は</p>
+<pre><code class="language-java">int a=3,b=5,c=2;
+</code></pre>
+<p>のようにコンマ(<code>,</code>)で区切って連ねることができます．</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="../Processing/chapter_02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="../Processing/chapter_04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="../Processing/chapter_02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="../Processing/chapter_04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>
