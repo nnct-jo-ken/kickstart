@@ -327,3 +327,18 @@ void draw(){
 }
 ```
 </div></details>
+
+
+
+## ほかの作品
+### OpenProcessing
+[OpenProcessing](https://openprocessing.org/)というサイトにはProcessingを使用した作品が投稿されています
+
+
+### #つぶやきProcessing
+![画面](img/twitter.png "画面")
+
+[つぶやきProcessingの例](https://twitter.com/Shibaken_8128/status/1245299092135088129)
+
+
+一つのツイートに収まるソースコードで作品を作る，#つぶやきProcessing というハッシュタグが存在します．ハッシュタグを検索すれば作品がたくさん出てきます．また，ハッシュタグさえ付ければ誰でも投稿が可能なので挑戦してみるのも良いでしょう．
