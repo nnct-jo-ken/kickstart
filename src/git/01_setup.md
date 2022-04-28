@@ -1,4 +1,4 @@
-# Git / GitHub を始める
+# Git / GitHub を始める準備
 
 ## Gitのインストール
 
@@ -52,7 +52,7 @@ Gitで使用する名前とメールアドレスを設定します。
 
 ![GitHubの返信不可能メールアドレス](./img/github-noreply-email.png)
 
-ターミナル上で以下のコマンド実行します
+ターミナル上で以下のコマンド実行します。
 
 ```shell
 git config --global user.name <名前>
