@@ -36,7 +36,25 @@ brew update
 brew install git
 ```
 
+
 ## GitHubのアカウント登録
 
 [ここから](https://github.com/join)GitHubのアカウント登録を行ってください。
 (GitHubは利用規約で複数アカウントの所持が禁止されているため解説できません。申し訳ありません。)
+
+
+## 名前とメールアドレスの設定
+
+Gitで使用する名前とメールアドレスを設定します。
+名前はお好きに決めて構いませんが、メールアドレスはGitHubに登録したものを使用する必要があります。
+この名前とメールアドレスは全世界に公開されます(GitHubにデータを上げる場合)。
+もしも自分のメールアドレスが晒されるのが嫌だと言う場合は、[GitHubの設定のEmailsタブ](https://github.com/settings/emails)にあるメールアドレスを使用してください。
+
+![GitHubの返信不可能メールアドレス](./img/github-noreply-email.png)
+
+ターミナル上で以下のコマンド実行します
+
+```shell
+git config --global user.name <名前>
+git config --global user.email <メールアドレス>
+```
