@@ -237,6 +237,27 @@ b=t; //tにもともとのaの値が残っている
 print(a,b);
 ```
 
+また，裏技チックですが，変数を用意しない方法もあります
+```java
+int a=5,b=3;
+
+a = a + b;
+b = a - b;
+a = a - b;
+println(a,b);
+
+a = a * b;
+b = a / b;
+a = a / b;
+println(a,b);
+
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+println(a,b);
+```
+この書き方をしたコードを他人にみせたときに，
+
 </div></details>
 
 

@@ -1,10 +1,16 @@
 # Chapter 7:関数を作る
 
+## 前提知識
+[補足資料/変数の詳しい話](../ProcessingOther/var.md)
+
 ## 関数とは
 実は今まで使ってきた`rect()`や`fill()`，`print()`などは関数と呼ばれるものです．
 
-例えば，`rect(x,y,a,b)`を実行した場合，
-座標(x,y)を左上の頂点として，横`a`縦`b`の長さである長方形が描かれます．`print(S);`(Sは文字列)は，文字列`S`がコンソールに表示されます．
+例えば，
+- `rect(x,y,a,b)`で，座標`(x,y)`を左上の頂点として，横`a`縦`b`の長さである長方形が描かれます．
+- `print(a)`では，変数`a`の内容が表示されます．
+- `background(r,g,b)`では，背景色(r,g,b)で画面がクリアされます．
+
 このように，関数は0個以上の入力(`rect`の例だと`x,y,a,b`)に対して何かを行うものです．
 
 そして，この関数は自分で作ることができます．
@@ -120,6 +126,12 @@ void setup(){
 
 
 ### 演習7-1
+> processingには，`background()`関数が用意されていて，色(r,g,b)で画面がクリアされる．
+> `background()`関数と同じ挙動をする`myBackground()`関数を作成せよ[^1]．
+
+[^1]: ここでは，`background()`関数がProcessingに用意されていなかったとする．つまり，`myBackground()`関数内に`background()`を置く，ということではなく，`rect()`関数などで画面を塗りつぶす方法を使用する．
+
+### 演習7-2
 > `doubleCircle(x,y,r)`と実行したとき，中心の座標が`(x,y)`で，直径が`r`と`r/2`の円による二重丸が描画される関数を作成してみよ．
 
 実行例
@@ -135,15 +147,101 @@ void draw(){
 ```
 ![](img/fig7-3.png "")
 
+### 演習7-3
+> マウスポインタと円の衝突判定をする関数を作りたい．具体的には，次のプログラムを実行すると，円にマウスポインタが触れたら色が変更される，という動作をするように，`isInCircle`関数を作成せよ．
+![](img/fig7-4.gif "")
+
+
+```java
+float ex=300;//円のx座標
+float ey=300;//円のy座標
+float r=100;//円の半径
+
+void setup(){
+  size(600,600);
+}
+
+void clearScreen(){//引数が0個の関数
+    fill(255,255,255);
+    rect(0,0,600,600);
+}
+
+/*
+中心(cx,cy)半径rの円と点(ax,ay)の位置関係を返す
+円の内部(境界線を含む)に点が入っている場合は1
+円の外に点がある場合は0
+が変える
+*/
+int isInCircle(float cx,float cy,float r,float ax,float ay){
+    /*何かを書く*/
+}
+
+void draw(){
+    clearScreen();//画面をまっさらに
+
+    if(isInCircle(ex,ey,r,mouseX,mouseY)==1){
+        fill(255,255,255);
+        ellipse(ex,ey,r*2,r*2);
+    }else{
+        fill(0,255,255);
+        ellipse(ex,ey,r*2,r*2);
+    }
+
+    ex+=5;//円を動かす
+    if(ex>=600+r){ //右端にいったら左端に戻す
+        ex=-r;
+    }
+}
+```
+
+
 ### 解答
 
 <details><summary>解答</summary><div>
-
 演習 7-1:
+
+画面の大きさがわからないため，十分に大きな長方形にしておく．
+```java
+void myBackground(int r,int g,int b){
+  fill(r,g,b);
+  rect(-10,-10,3000,3000);
+}
+```
+実は，システム変数を使えば必要以上に大きな長方形を描く必要がない．
+また，`noStroke()`関数で図形の枠線をなくすことができる．
+```java
+void myBackground(int r,int g,int b){
+  fill(r,g,b);
+  noStroke();//枠線なし
+  rect(0,0,width,height);
+}
+```
+
+演習 7-2:
 ```java
 void doubleCircle(float x,float y,float r){
   ellipse(x,y,r,r);
   ellipse(x,y,r/2,r/2);
+}
+```
+
+演習 7-3:
+円の内部に入っているということは，円の中心からの距離が，円の半径の長さ以下ということです．円の中心と，ある点の位置の距離は三平方の定理で求めることができます．
+```java
+/*
+中心(cx,cy)半径rの円と点(ax,ay)の位置関係を返す
+円の内部(境界線を含む)に点が入っている場合は1
+円の外に点がある場合は0
+が変える
+*/
+int isInCircle(float cx,float cy,float r,float ax,float ay){
+    float dx=(cx-ax);
+    float dy=(cy-ay);
+    if (sqrt(dx*dx+dy*dy)>=r){
+        return 1;
+    }else{
+        return 0;
+    }
 }
 ```
 
