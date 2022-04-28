@@ -1,15 +1,16 @@
 # Chapter 2:バーとボールを作ろう
 
+まず，自分のバーと相手のバーとボールの位置と大きさを決めます．
 
 ```java
-float ballX=400;
-float ballY=400;
-float ballRad=20;
+float ballX=400; //ボールのx座標
+float ballY=400; //ボールのy座標
+float ballRad=20; //ボールの半径
 
-float mybarX=200;
-float mybarY=700;
-float mybarW=100;
-float mybarH=30;
+float mybarX=200; //バーのx座標
+float mybarY=700; //バーのy座標
+float mybarW=100; //バーの幅
+float mybarH=30; //バーの高さ
 
 float combarX=170;
 float combarY=100;
