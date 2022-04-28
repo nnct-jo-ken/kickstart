@@ -107,7 +107,7 @@ if(score<60){
 次の2つのプログラムと実行結果を比較してみましょう
 
 ```java
-int score=74;
+int score=54;
 if(score<60){
     println("不可");
     println("課題を提出してもらったので点数を60点にしてあげます");
@@ -118,7 +118,7 @@ if(score<60){
 ```
 
 ```java
-int score=74;
+int score=54;
 if(score<60){
     println("不可");
     println("課題を提出してもらったので点数を60点にしてあげます");
