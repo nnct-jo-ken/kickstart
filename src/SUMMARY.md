@@ -16,12 +16,13 @@
   - [Chapter 9:クラスとメンバ](Processing/chapter_09.md)
 
 - [ゲームを作ってみよう]()
-  - [Level 1:単発避けゲー](ProcessingGame/Game_01.md)
+  - [Game 1:単発避けゲー](ProcessingGame/Game_01.md)
+  - [Game 1:計算ゲーム](ProcessingGame/Game_02.md)
 
 - [発展]()
-  - [平方根](ProcessingChallenge/sqrt.md))
-  - [再帰処理でフラクタル図形](ProcessingChallenge/fractal.md))
-  - [三角関数](ProcessingChallenge/sin.md))
+  - [平方根](ProcessingChallenge/sqrt.md)
+  - [再帰処理でフラクタル図形](ProcessingChallenge/fractal.md)
+  - [三角関数](ProcessingChallenge/sin.md)
 
 - [補足資料]()
   - [コンピュータ上での色の表現](ProcessingOther/color.md)
