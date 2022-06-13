@@ -17,7 +17,7 @@
 
 - [ゲームを作ってみよう]()
   - [Game 1:単発避けゲー](ProcessingGame/Game_01.md)
-  - [Game 1:計算ゲーム](ProcessingGame/Game_02.md)
+  - [Game 2:鳥のゲーム](ProcessingGame/Game_02.md)
 
 - [発展]()
   - [平方根](ProcessingChallenge/sqrt.md)
@@ -29,6 +29,6 @@
   - [変数の詳しい話](ProcessingOther/var.md)
   - [演算子](ProcessingOther/operator.md)
   - [Scratchの命令に置き換えると？](ProcessingOther/scratch.md)
-  - [Processingの次は？](ProcessingOther/operator.md)
+  - [Processingの次は？](ProcessingOther/next.md)
 
 - [サンプルプログラム](ProcessingSample/all.md)
