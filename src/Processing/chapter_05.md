@@ -109,13 +109,8 @@ if(score<60){
 ```java
 int score=54;
 if(score<60){
-<<<<<<< HEAD
     println("不可");
     println("課題を提出してもらったので点数を60点にしてあげます");
-=======
-    print("不可");
-    print("課題を提出してもらったので点数を60点にしてあげます")
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
     score=60;
 }else{
     println("合格");
@@ -125,13 +120,8 @@ if(score<60){
 ```java
 int score=54;
 if(score<60){
-<<<<<<< HEAD
     println("不可");
     println("課題を提出してもらったので点数を60点にしてあげます");
-=======
-    print("不可");
-    print("課題を提出してもらったので点数を60点にしてあげます")
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
     score=60;
 }
 if(score>=60){

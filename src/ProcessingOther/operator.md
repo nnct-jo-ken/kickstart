@@ -73,9 +73,3 @@ for(int i=0;i<(1<<size);i++){
   print("\n");
 }
 ```
-
-<<<<<<< HEAD
-=======
-## 3項演算子
-
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
