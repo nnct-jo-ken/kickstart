@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Chapter 3:バーを動かそう - Kickstart Programming</title>
+        <title>再帰処理でフラクタル図形 - Kickstart Programming</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -77,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Kickstart Programming</a></li><li class="chapter-item expanded "><a href="../wsl_environment/chapter_1.html"><strong aria-hidden="true">2.</strong> WSL2の環境構築</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> プログラミング入門</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Processing/chapter_01.html"><strong aria-hidden="true">3.1.</strong> Chapter 1:Processingを始めよう</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_02.html"><strong aria-hidden="true">3.2.</strong> Chapter 2:図形を描いてみよう</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_03.html"><strong aria-hidden="true">3.3.</strong> Chapter 3:変数</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_04.html"><strong aria-hidden="true">3.4.</strong> Chapter 4:動きを作る</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_05.html"><strong aria-hidden="true">3.5.</strong> Chapter 5:分岐処理</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_06.html"><strong aria-hidden="true">3.6.</strong> Chapter 6:繰り返し処理</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_07.html"><strong aria-hidden="true">3.7.</strong> Chapter 7:関数を作る</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_08.html"><strong aria-hidden="true">3.8.</strong> Chapter 8:配列</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_09.html"><strong aria-hidden="true">3.9.</strong> Chapter 9:クラスとメンバ</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> ゲームを作ってみよう</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingGame/Game_01.html"><strong aria-hidden="true">4.1.</strong> Chapter 1:設計を考えよう</a></li><li class="chapter-item expanded "><a href="../ProcessingGame/Game_02.html"><strong aria-hidden="true">4.2.</strong> Chapter 2:バーとボールを作ろう</a></li><li class="chapter-item expanded "><a href="../ProcessingGame/Game_03.html" class="active"><strong aria-hidden="true">4.3.</strong> Chapter 3:バーを動かそう</a></li><li class="chapter-item expanded "><a href="../ProcessingGame/Game_04.html"><strong aria-hidden="true">4.4.</strong> Chapter 4:ボールを動かそう</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 発展</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingChallenge/sqrt.html"><strong aria-hidden="true">5.1.</strong> 平方根</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 補足資料</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingOther/color.html"><strong aria-hidden="true">6.1.</strong> コンピュータ上での色の表現</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/var.html"><strong aria-hidden="true">6.2.</strong> 変数の詳しい話</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/operator.html"><strong aria-hidden="true">6.3.</strong> 演算子</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/scratch.html"><strong aria-hidden="true">6.4.</strong> Scratchの命令に置き換えると？</a></li></ol></li><li class="chapter-item expanded "><a href="../ProcessingSample/all.html"><strong aria-hidden="true">7.</strong> サンプルプログラム</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Kickstart Programming</a></li><li class="chapter-item expanded "><a href="../wsl_environment/chapter_1.html"><strong aria-hidden="true">2.</strong> WSL2の環境構築</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> プログラミング入門</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Processing/chapter_01.html"><strong aria-hidden="true">3.1.</strong> Chapter 1:Processingを始めよう</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_02.html"><strong aria-hidden="true">3.2.</strong> Chapter 2:図形を描いてみよう</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_03.html"><strong aria-hidden="true">3.3.</strong> Chapter 3:変数</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_04.html"><strong aria-hidden="true">3.4.</strong> Chapter 4:動きを作る</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_05.html"><strong aria-hidden="true">3.5.</strong> Chapter 5:分岐処理</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_06.html"><strong aria-hidden="true">3.6.</strong> Chapter 6:繰り返し処理</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_07.html"><strong aria-hidden="true">3.7.</strong> Chapter 7:関数を作る</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_08.html"><strong aria-hidden="true">3.8.</strong> Chapter 8:配列</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_09.html"><strong aria-hidden="true">3.9.</strong> Chapter 9:クラスとメンバ</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> ゲームを作ってみよう</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingGame/Game_01.html"><strong aria-hidden="true">4.1.</strong> Game 1:単発避けゲー</a></li><li class="chapter-item expanded "><a href="../ProcessingGame/Game_02.html"><strong aria-hidden="true">4.2.</strong> Game 2:鳥のゲーム</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 発展</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingChallenge/sqrt.html"><strong aria-hidden="true">5.1.</strong> 平方根</a></li><li class="chapter-item expanded "><a href="../ProcessingChallenge/fractal.html" class="active"><strong aria-hidden="true">5.2.</strong> 再帰処理でフラクタル図形</a></li><li class="chapter-item expanded "><a href="../ProcessingChallenge/sin.html"><strong aria-hidden="true">5.3.</strong> 三角関数</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 補足資料</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingOther/color.html"><strong aria-hidden="true">6.1.</strong> コンピュータ上での色の表現</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/var.html"><strong aria-hidden="true">6.2.</strong> 変数の詳しい話</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/operator.html"><strong aria-hidden="true">6.3.</strong> 演算子</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/scratch.html"><strong aria-hidden="true">6.4.</strong> Scratchの命令に置き換えると？</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/next.html"><strong aria-hidden="true">6.5.</strong> Processingの次は？</a></li></ol></li><li class="chapter-item expanded "><a href="../ProcessingSample/all.html"><strong aria-hidden="true">7.</strong> サンプルプログラム</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -136,85 +136,69 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-3バーを動かそう"><a class="header" href="#chapter-3バーを動かそう">Chapter 3:バーを動かそう</a></h1>
-<pre><code class="language-java">float ballX=400;
-float ballY=400;
-float ballRad=10;//半径
-float ballAng=PI/6;//角度
-float ballSpeed=6;//ボールのスピード
-
-float mybarX=200;
-float mybarY=700;
-float mybarW=100;
-float mybarH=30;
-
-float combarX=170;
-float combarY=100;
-float combarW=100;
-float combarH=30;
+                        <h1 id="再帰でフラクタル図形"><a class="header" href="#再帰でフラクタル図形">再帰でフラクタル図形</a></h1>
+<p>フラクタル図形(構造)とは，その図形自身の一部が自身の相似な図形となっている図形や構造のことです．</p>
+<pre><code class="language-java">
+void rerect(int x,int y,int side,int cnt){
+  if(cnt&lt;=0)return;
+  rect(x,y,side,side);
+  side/=3;
+  for(int dx=0;dx&lt;=1;dx++){
+    for(int dy=0;dy&lt;=1;dy++){
+      rerect(x+dx*side,y+dy*side,side,cnt-1);
+    }
+  }
+}
 
 void setup(){
   size(800,800);
+  frameRate(10);
 }
 
 void draw(){
-  clear();
-  barMove();
-  ballMove();
-  ellipse(ballX,ballY,ballRad*2,ballRad*2);
-  rect(mybarX,mybarY,mybarW,mybarH);
-  rect(combarX,combarY,combarW,combarH);
+  background(0,0,0);
+  stroke(255);
+  noFill();
+  rerect(100,100,600,7);
 }
-
-
-void ballMove(){
-  float newballX=ballX+cos(ballAng)*ballSpeed;
-  float newballY=ballY+sin(ballAng)*ballSpeed;
-  
-  if(newballX&lt;ballRad){
-    newballX=ballRad-newballX;
-    ballAng=PI-ballAng;
-  }
-  
-  if(newballX&gt;=width-ballRad){
-    newballX=(width-ballRad)*2-newballX;
-    ballAng=PI-ballAng;
-  }
-  
-  if(newballY+ballRad&gt;mybarY){
-    if(mybarX&lt;newballX+ballRad &amp;&amp; newballX-ballRad&lt;mybarX+mybarW){
-      ballAng=-ballAng;
-    }
-  }
-  
-  if(newballY-ballRad&lt;combarY+combarH){
-    if(combarX&lt;ballX+ballRad &amp;&amp; newballX-ballRad&lt;combarX+combarW){
-      ballAng=-ballAng;
-    }
-  }
-  
-  ballX=newballX;
-  ballY=newballY;
-}
-
-void barMove(){
-  if(keyPressed == false)return;
-  if(keyCode==LEFT)mybarX-=10;
-  else if(keyCode==RIGHT)mybarX+=10;
-}
-
 
 </code></pre>
-<h1 id="工事中"><a class="header" href="#工事中">工事中</a></h1>
+<pre><code class="language-java">int cnt=0;
+float t=0;
+
+void setup(){
+  size(1100,800);
+  frameRate(30);
+}
+
+void tree(float x,float y,float s,float r,int c){
+  if(c&lt;=0)return;
+  for(int i=-2;i&lt;=2;i+=2){
+    float nr=i*0.15+r;
+    float dx=cos(nr)*s;
+    float dy=sin(nr)*s;
+    line(x,y,x+dx,y+dy);
+    tree(x+dx,y+dy,s*0.9,nr,c-1);
+  }
+}
+
+void draw(){
+  background(0);
+  strokeWeight(2);
+  stroke(255);
+  tree(width/2,height,150,-PI/2,6);
+}
+
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../ProcessingGame/Game_02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../ProcessingChallenge/sqrt.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../ProcessingGame/Game_04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../ProcessingChallenge/sin.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -223,10 +207,10 @@ void barMove(){
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../ProcessingGame/Game_02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../ProcessingChallenge/sqrt.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../ProcessingGame/Game_04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../ProcessingChallenge/sin.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
