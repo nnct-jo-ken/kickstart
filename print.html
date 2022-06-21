@@ -835,13 +835,8 @@ if(score&lt;60){
 <p>次の2つのプログラムと実行結果を比較してみましょう</p>
 <pre><code class="language-java">int score=54;
 if(score&lt;60){
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
     println(&quot;不可&quot;);
     println(&quot;課題を提出してもらったので点数を60点にしてあげます&quot;);
-=======
-    print(&quot;不可&quot;);
-    print(&quot;課題を提出してもらったので点数を60点にしてあげます&quot;)
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
     score=60;
 }else{
     println(&quot;合格&quot;);
@@ -849,13 +844,8 @@ if(score&lt;60){
 </code></pre>
 <pre><code class="language-java">int score=54;
 if(score&lt;60){
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
     println(&quot;不可&quot;);
     println(&quot;課題を提出してもらったので点数を60点にしてあげます&quot;);
-=======
-    print(&quot;不可&quot;);
-    print(&quot;課題を提出してもらったので点数を60点にしてあげます&quot;)
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
     score=60;
 }
 if(score&gt;=60){
@@ -1172,12 +1162,8 @@ for(int y=100;y&lt;=600;y+=100){
 <p>このように，関数は0個以上の入力(<code>rect</code>の例だと<code>x,y,a,b</code>)に対して何かを行うものです．</p>
 <p>そして，この関数は自分で作ることができます．</p>
 <h2 id="引数"><a class="header" href="#引数">引数</a></h2>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-<code>rect(x,y,a,b);</code>について，<code>x,y,a,b</code>をそれぞれ引数(ひきすう)と呼びます．
-また，引数それぞれには型が決まっていて<code>rect</code>の場合は<code>float</code>型です</h1>
-<p><code>rect(x,y,a,b);</code>について，x,y,a,bをそれぞれ引数(ひきすう)と呼びます．
-また，引数それぞれには型が決まっていてrectの場合はfloat型です
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8</p>
+<p><code>rect(x,y,a,b);</code>について，<code>x,y,a,b</code>をそれぞれ引数(ひきすう)と呼びます．
+また，引数それぞれには型が決まっていて<code>rect</code>の場合は<code>float</code>型です</p>
 <h2 id="関数を作る"><a class="header" href="#関数を作る">関数を作る</a></h2>
 <p>関数を次のようにして定義できます．</p>
 <pre><code class="language-java">void 関数名(型 仮引数名，型 仮引数名，......){
@@ -1203,10 +1189,7 @@ void face(int x,int y){//座標(x,y)に顔を描く
     line(x-50,y+50,x+50,y+50);
 }
 </code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-この例では<code>face(x,y)</code>という関数を作っています．</h1>
-<p>この例ではface(x,y)という関数を作っています．
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8</p>
+<p>この例では<code>face(x,y)</code>という関数を作っています．</p>
 <p><img src="Processing/img/voidfun.svg" alt="" /></p>
 <p>引数は個数はいくつでもよいです．</p>
 <pre><code class="language-java">int x=0,y=0;
@@ -1268,7 +1251,6 @@ void setup(){
 }
 </code></pre>
 <p><img src="Processing/img/floatfun.svg" alt="" /></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h3 id="演習7-1"><a class="header" href="#演習7-1">演習7-1</a></h3>
 <blockquote>
 <p>processingには，<code>background()</code>関数が用意されていて，色(r,g,b)で画面がクリアされる．
@@ -1379,9 +1361,6 @@ int isInCircle(float cx,float cy,float r,float ax,float ay){
 }
 </code></pre>
 </div></details>
-=======
-ちなみに，二つの点の距離がわかれば円の衝突判定をすることができますので考えてみてください．
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
 <div style="break-before: page; page-break-before: always;"></div><h1 id="chapter-8配列"><a class="header" href="#chapter-8配列">Chapter 8:配列</a></h1>
 <h2 id="まとめて管理"><a class="header" href="#まとめて管理">まとめて管理</a></h2>
 <p>シューティングゲームなどで，100個の弾の座標を管理したいときに次のように変数を定義していては大変です．</p>
@@ -1472,8 +1451,7 @@ ball[0].v=-3.2;
 ball[0].a=0.1;
 
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h1 id="game-1単発避けゲー"><a class="header" href="#game-1単発避けゲー">Game 1:単発避けゲー</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="game-1単発避けゲー"><a class="header" href="#game-1単発避けゲー">Game 1:単発避けゲー</a></h1>
 <p>次のようなゲームを作ります．
 マウスで水色の円を動かして，紫色の円から逃げるゲームです．
 <img src="ProcessingGame/img/f1-4.gif" alt="" title=" " /></p>
@@ -1612,8 +1590,7 @@ void draw(){
 <li>敵のスピードがだんだん早くなるようにする</li>
 <li>ゲームオーバーになったあとにリトライできるようにする</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<h1 id="game-2鳥のゲーム"><a class="header" href="#game-2鳥のゲーム">Game 2:鳥のゲーム</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="game-2鳥のゲーム"><a class="header" href="#game-2鳥のゲーム">Game 2:鳥のゲーム</a></h1>
 <p>今回は，キーボードを押すとキャラクターが上昇するゲームを作成します．</p>
 <p>工事中</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="発展平方根"><a class="header" href="#発展平方根">発展:平方根</a></h1>
@@ -1863,23 +1840,6 @@ for(int i=0;i&lt;(1&lt;&lt;size);i++){
   print(&quot;\n&quot;);
 }
 </code></pre>
-<h1 id="head"><a class="header" href="#head">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a></h1>
-<h2 id="3項演算子"><a class="header" href="#3項演算子">3項演算子</a></h2>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scratchの命令に置き換えると"><a class="header" href="#scratchの命令に置き換えると">Scratchの命令に置き換えると？</a></h1>
 <table><thead><tr><th style="text-align: left">ブロック</th><th style="text-align: left">Processing</th></tr></thead><tbody>
 <tr><td style="text-align: left"><img src="ProcessingOther/img/if.png" alt="a" title="a" /></td><td style="text-align: left"><code>if(a&gt;50){}</code></td></tr>
@@ -2186,13 +2146,9 @@ void draw(){
 }
 </code></pre>
 </div></details>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<p>=======
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8</p>
 <h2 id="ほかの作品"><a class="header" href="#ほかの作品">ほかの作品</a></h2>
 <h3 id="openprocessing"><a class="header" href="#openprocessing">OpenProcessing</a></h3>
 <p><a href="https://openprocessing.org/">OpenProcessing</a>というサイトにはProcessingを使用した作品が投稿されています</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <h3 id="つぶやきprocessing"><a class="header" href="#つぶやきprocessing">つぶやきProcessing</a></h3>
 <p><img src="ProcessingSample/img/twitter.png" alt="画面" title="画面" /></p>
 <p>一つのツイートに収まるソースコードで作品を作る，#つぶやきProcessing というハッシュタグが存在します．ハッシュタグを検索すれば作品がたくさん出てきます．また，ハッシュタグさえ付ければ誰でも投稿が可能なので挑戦してみるのも良いでしょう．</p>
@@ -2201,12 +2157,6 @@ void draw(){
 </code></pre>
 <p><a href="https://twitter.com/Shibak3333n/status/1418192071987400713">ツイート例</a></p>
 <p>このような数式などを使った幾何学的な作品はジェネラティブアート(Generative Art)と呼びます．Processingはジェネラティブアートをするのに手軽な言語です．</p>
-<p>=======</p>
-<h3 id="つぶやきprocessing-1"><a class="header" href="#つぶやきprocessing-1">#つぶやきProcessing</a></h3>
-<p><img src="ProcessingSample/img/twitter.png" alt="画面" title="画面" /></p>
-<p><a href="https://twitter.com/Shibaken_8128/status/1245299092135088129">つぶやきProcessingの例</a></p>
-<p>一つのツイートに収まるソースコードで作品を作る，#つぶやきProcessing というハッシュタグが存在します．ハッシュタグを検索すれば作品がたくさん出てきます．また，ハッシュタグさえ付ければ誰でも投稿が可能なので挑戦してみるのも良いでしょう．
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8</p>
 
                     </main>
 
