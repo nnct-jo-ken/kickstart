@@ -330,10 +330,32 @@ void draw(){
 
 
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
 ## ほかの作品
 ### OpenProcessing
 [OpenProcessing](https://openprocessing.org/)というサイトにはProcessingを使用した作品が投稿されています
 
+<<<<<<< HEAD
+### つぶやきProcessing
+![画面](img/twitter.png "画面")
+
+
+一つのツイートに収まるソースコードで作品を作る，#つぶやきProcessing というハッシュタグが存在します．ハッシュタグを検索すれば作品がたくさん出てきます．また，ハッシュタグさえ付ければ誰でも投稿が可能なので挑戦してみるのも良いでしょう．
+
+次のプログラムはつぶやきProcessingの例です．
+```java
+float t,e,i,j;void setup(){size(900,600);}void draw(){t+=.017;e+=.1;clear();noStroke();for(i=0;i<32;i++)for(j=1;j<5;j++){float d=1-j/25,c=i*0.196+t*(2+j/3);float x=cos(c)*100*j,y=sin(c)*100*j;ellipse(450+x*cos(e/j)+y*sin(d)*sin(e/j),300+y*cos(d),10*j,10*j);}}
+```
+[ツイート例](https://twitter.com/Shibak3333n/status/1418192071987400713)
+
+このような数式などを使った幾何学的な作品はジェネラティブアート(Generative Art)と呼びます．Processingはジェネラティブアートをするのに手軽な言語です．
+
+=======
 
 ### #つぶやきProcessing
 ![画面](img/twitter.png "画面")
@@ -342,3 +364,4 @@ void draw(){
 
 
 一つのツイートに収まるソースコードで作品を作る，#つぶやきProcessing というハッシュタグが存在します．ハッシュタグを検索すれば作品がたくさん出てきます．また，ハッシュタグさえ付ければ誰でも投稿が可能なので挑戦してみるのも良いでしょう．
+>>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
