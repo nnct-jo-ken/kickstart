@@ -16,13 +16,8 @@
 そして，この関数は自分で作ることができます．
 
 ## 引数
-<<<<<<< HEAD
 `rect(x,y,a,b);`について，`x,y,a,b`をそれぞれ引数(ひきすう)と呼びます．
 また，引数それぞれには型が決まっていて`rect`の場合は`float`型です
-=======
-`rect(x,y,a,b);`について，x,y,a,bをそれぞれ引数(ひきすう)と呼びます．
-また，引数それぞれには型が決まっていてrectの場合はfloat型です
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
 
 ## 関数を作る
 関数を次のようにして定義できます．
@@ -52,11 +47,7 @@ void face(int x,int y){//座標(x,y)に顔を描く
 }
 ```
 
-<<<<<<< HEAD
 この例では`face(x,y)`という関数を作っています．
-=======
-この例ではface(x,y)という関数を作っています．
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
 
 ![](img/voidfun.svg "")
 
@@ -134,7 +125,6 @@ void setup(){
 ![](img/floatfun.svg "")
 
 
-<<<<<<< HEAD
 ### 演習7-1
 > processingには，`background()`関数が用意されていて，色(r,g,b)で画面がクリアされる．
 > `background()`関数と同じ挙動をする`myBackground()`関数を作成せよ[^1]．
@@ -256,7 +246,3 @@ int isInCircle(float cx,float cy,float r,float ax,float ay){
 ```
 
 </div></details>
-=======
-ちなみに，二つの点の距離がわかれば円の衝突判定をすることができますので考えてみてください．
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
-

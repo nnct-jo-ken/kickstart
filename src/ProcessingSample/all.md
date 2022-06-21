@@ -328,19 +328,10 @@ void draw(){
 ```
 </div></details>
 
-
-
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
 ## ほかの作品
 ### OpenProcessing
 [OpenProcessing](https://openprocessing.org/)というサイトにはProcessingを使用した作品が投稿されています
 
-<<<<<<< HEAD
 ### つぶやきProcessing
 ![画面](img/twitter.png "画面")
 
@@ -354,14 +345,3 @@ float t,e,i,j;void setup(){size(900,600);}void draw(){t+=.017;e+=.1;clear();noSt
 [ツイート例](https://twitter.com/Shibak3333n/status/1418192071987400713)
 
 このような数式などを使った幾何学的な作品はジェネラティブアート(Generative Art)と呼びます．Processingはジェネラティブアートをするのに手軽な言語です．
-
-=======
-
-### #つぶやきProcessing
-![画面](img/twitter.png "画面")
-
-[つぶやきProcessingの例](https://twitter.com/Shibaken_8128/status/1245299092135088129)
-
-
-一つのツイートに収まるソースコードで作品を作る，#つぶやきProcessing というハッシュタグが存在します．ハッシュタグを検索すれば作品がたくさん出てきます．また，ハッシュタグさえ付ければ誰でも投稿が可能なので挑戦してみるのも良いでしょう．
->>>>>>> b20bcb7dd3a1ff641b1f60ef110d0bbe84e187f8
