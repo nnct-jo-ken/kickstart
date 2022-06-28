@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Git概要 - Kickstart Programming</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Kickstart Programming</a></li><li class="chapter-item expanded "><a href="../wsl_environment/chapter_1.html"><strong aria-hidden="true">2.</strong> WSL2の環境構築</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> プログラミング入門</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Processing/chapter_01.html"><strong aria-hidden="true">3.1.</strong> Chapter 1:Processingを始めよう</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_02.html"><strong aria-hidden="true">3.2.</strong> Chapter 2:図形を描いてみよう</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_03.html"><strong aria-hidden="true">3.3.</strong> Chapter 3:変数</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_04.html"><strong aria-hidden="true">3.4.</strong> Chapter 4:動きを作る</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_05.html"><strong aria-hidden="true">3.5.</strong> Chapter 5:分岐処理</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_06.html"><strong aria-hidden="true">3.6.</strong> Chapter 6:繰り返し処理</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_07.html"><strong aria-hidden="true">3.7.</strong> Chapter 7:関数を作る</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_08.html"><strong aria-hidden="true">3.8.</strong> Chapter 8:配列</a></li><li class="chapter-item expanded "><a href="../Processing/chapter_09.html"><strong aria-hidden="true">3.9.</strong> Chapter 9:クラスとメンバ</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> ゲームを作ってみよう</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingGame/Game_01.html"><strong aria-hidden="true">4.1.</strong> Game 1:単発避けゲー</a></li><li class="chapter-item expanded "><a href="../ProcessingGame/Game_02.html"><strong aria-hidden="true">4.2.</strong> Game 2:鳥のゲーム</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 発展</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingChallenge/sqrt.html"><strong aria-hidden="true">5.1.</strong> 平方根</a></li><li class="chapter-item expanded "><a href="../ProcessingChallenge/fractal.html"><strong aria-hidden="true">5.2.</strong> 再帰処理でフラクタル図形</a></li><li class="chapter-item expanded "><a href="../ProcessingChallenge/sin.html"><strong aria-hidden="true">5.3.</strong> 三角関数</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 補足資料</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ProcessingOther/color.html"><strong aria-hidden="true">6.1.</strong> コンピュータ上での色の表現</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/var.html"><strong aria-hidden="true">6.2.</strong> 変数の詳しい話</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/operator.html"><strong aria-hidden="true">6.3.</strong> 演算子</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/scratch.html"><strong aria-hidden="true">6.4.</strong> Scratchの命令に置き換えると？</a></li><li class="chapter-item expanded "><a href="../ProcessingOther/next.html"><strong aria-hidden="true">6.5.</strong> Processingの次は？</a></li></ol></li><li class="chapter-item expanded "><a href="../ProcessingSample/all.html"><strong aria-hidden="true">7.</strong> サンプルプログラム</a></li><li class="chapter-item expanded "><a href="../git/index.html"><strong aria-hidden="true">8.</strong> Git / GitHub講座</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../git/01_setup.html"><strong aria-hidden="true">8.1.</strong> Git / GitHubを始める準備</a></li><li class="chapter-item expanded "><a href="../git/02_git_summary.html" class="active"><strong aria-hidden="true">8.2.</strong> Git概要</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Kickstart Programming</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="gitの概要"><a class="header" href="#gitの概要">Gitの概要</a></h1>
+<h2 id="gitの仕組み"><a class="header" href="#gitの仕組み">Gitの仕組み</a></h2>
+<p>Gitはバージョン管理システムだと言いましたが、Gitどのようにバージョンを管理しているのでしょうか。
+Gitは <strong>スナップショット(Snapshot)</strong> を取ることによってバージョンを管理しています。</p>
+<p>Gitにバージョンを記録するとき、その時点での全てのファイルの状態のスナップショットを撮ります。
+そしてバージョンとしてそのスナップショットへの参照を記録します。
+もしすでにスナップショットが撮られていて、変更がないファイルの場合はスナップショットは撮らずに過去のスナップショットを使いまします。</p>
+<p><img src="./img/snapshot.svg" alt="スナップショットが記録される様子" /></p>
+<p><strong>つまりGitはバージョンごとのファイルのデータを全て記録しています。</strong>
+そのため過去のバージョンのファイルを表示する時、Gitは過去のバージョンに記録されているスナップショットの参照からファイルデータを表示しているだけなのです。</p>
+<h2 id="gitは永続的"><a class="header" href="#gitは永続的">Gitは永続的</a></h2>
+<p>Gitは基本的にデータを追加していくだけです。
+データの削除は行われず、一度記録されたデータは永久的に残ります。<sup class="footnote-reference"><a href="#1">1</a></sup>
+これは試行錯誤を安全に行えるため、Git(バージョン管理システム)の利点となります。
+<strong>しかし、何かしらの機密情報(パスワードやトークンなど)を間違えて記録してしまうと削除が非常に難しくなります。</strong>
+Git/GitHubを利用する際はその点に留意して利用してください。</p>
+<h2 id="リポジトリ"><a class="header" href="#リポジトリ">リポジトリ</a></h2>
+<p>Gitのバージョン管理は <strong>リポジトリ(Repository)</strong> という単位で行われます。
+ファイルの変更履歴などの情報は全てリポジトリに記録されます。</p>
+<p>リポジトリの実態は<code>.git</code>というディレクトリです。
+Gitの管理下(=リポジトリの管理下)にあるディレクトリにはこの<code>.git</code>というディレクトリが存在します。</p>
+<p><img src="./img/git-dotdir.png" alt=".gitというディレクトリ" /></p>
+<p><strong>この<code>.git</code>にはリポジトリのあらゆるデータが格納されているため、これを削除してしまうとリポジトリも消えてしまいます。
+注意しましょう。</strong></p>
+<h2 id="ローカルリポジトリとリモートリポジトリ"><a class="header" href="#ローカルリポジトリとリモートリポジトリ">ローカルリポジトリとリモートリポジトリ</a></h2>
+<p>Gitは複数人での共同管理に対応しています。
+この共同管理は1つのデータを複数のリポジトリで共有することで実現しています。
+リポジトリは <strong>ローカルリポジトリ</strong> と <strong>リモートリポジトリ</strong> の2種類に分類できます。</p>
+<p>ローカルリポジトリは自分のPC上に置いておくリポジトリで、共同管理者一人ひとりがPC上に配置します。
+対してリモートリポジトリはサーバ等の複数人でアクセスできる環境に置かれ、このリモートリポジトリを介して共同管理者はリポジトリのデータをやり取りします。</p>
+<p><img src="./img/local-remote-repository.svg" alt="ローカルリポジトリとリモートリポジトリの関係" /></p>
+<p>また、ローカルリポジトリのデータをリモートリポジトリにアップロードすることを <strong>プッシュ(Push)</strong> 、リモートリポジトリのデータをローカルリポジトリにダウンロードすることを <strong>フェッチ(Fetch)</strong> と言います。
+詳しくは後述しますが、覚えておきましょう。</p>
+<h2 id="コミット"><a class="header" href="#コミット">コミット</a></h2>
+<p>ファイルデータのスナップショットを撮って、バージョンを記録することを <strong>コミット(Commit)</strong> と言います。
+この表現は非常に多く出てくるので覚えておきましょう。</p>
+<h2 id="gitにおける3つの場所"><a class="header" href="#gitにおける3つの場所">Gitにおける3つの場所</a></h2>
+<p>リポジトリには3つの場所が存在します。
+それは <strong>作業ディレクトリ(Working Directory)</strong> 、 <strong>ステージングエリア(Staging Area)</strong> 、 <strong><code>.git</code>ディレクトリ(リポジトリ)</strong> です。
+<strong>作業ディレクトリ</strong> は現在ディスク上に存在するファイルのことで、実際に作業しているディレクトリを指します。
+<strong>ステージングエリア</strong> はコミットの準備をするための場所で、ここに置いたファイルがコミットに含まれます。
+<strong><code>.git</code>ディレクトリ</strong> はコミットしたバージョンが含まれます。</p>
+<hr />
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>特殊な管理コマンドを使用したり、ガベージコレクションといった操作を行うと、データが削除されることがあります。</p>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../git/01_setup.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../git/01_setup.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
