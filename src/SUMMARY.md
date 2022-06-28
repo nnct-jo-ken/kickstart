@@ -32,3 +32,7 @@
   - [Processingの次は？](ProcessingOther/next.md)
 
 - [サンプルプログラム](ProcessingSample/all.md)
+
+- [Git / GitHub講座](./git/README.md)
+  - [Git / GitHubを始める準備](./git/01_setup.md)
+  - [Git概要](./git/02_git_summary.md)
