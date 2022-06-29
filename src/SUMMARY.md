@@ -37,4 +37,6 @@
   - [Git / GitHubを始める準備](./git/01_setup.md)
   - [Git概要](./git/02_git_summary.md)
   - [初めてのコミット](./git/03_first_git_commit.md)
+  - [初めてのプッシュ](./git/04_first_github_push.md)
   - [用語集](./git/99_glossary.md)
+  
