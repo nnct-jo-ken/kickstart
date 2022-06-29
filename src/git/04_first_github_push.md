@@ -45,6 +45,32 @@ git remote add origin <リモートリポジトリへのURL>
 
 無事に追加ができたかどうかは`git remote show`で確認することが出来ます。`git remote show`で現在のリモートリポジトリの一覧が、`git remote show <リモートリポジトリ名>`でそのリモートリポジトリの詳細を確認することが出来ます。
 
+
+# プッシュ
+
+リモートリポジトリが登録できたらいよいよプッシュをしてみます。
+プッシュを行うコマンドは文字通り`git push`です。
+
+```shell
+git push -u origin master
+```
+
+`origin`は先程のリモートリポジトリ名、`master`はブランチ名です。ブランチの解説は後に行うので、今は気にしないでください。
+`-u`オプションは`--set-upstream`の略です。
+これは上流ブランチと呼ばれるものを設定するオプションですが、少し難しい概念なため解説は割愛します。
+気になる方は調べてみてください。
+
+Git for Windowsを使用している場合はプッシュするとログインを求められる画面が表示されるはずなので、画面に従ってログインをしてください。
+macOSやLinuxでGitを操作している場合はユーザ名とパスワードを求められます。
+ユーザ名はGitHubのユーザ名を、パスワードには **パスワードではなく、Personal Access Tokenと呼ばれるトークン** を入力します。
+詳しくは[このページ](https://docs.github.com/ja/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)を参照してください。
+
+無事にプッシュが出来たらGitHubのリポジトリへアクセス(またはページの更新)をしてみましょう。成功していれば先程と異なる画面が表示されるはずです！
+
+![プッシュ後のGitHubのリポジトリ画面](./img/github-after-push-repository.png)
+
+GitHubのリポジトリ画面ではコミット履歴や各コミットでの変更点、ファイルの閲覧をすることが出来ます。色々触ってみて遊んでみてください！
+
 ---
 
 [^1]: リポジトリ名の下のPublic/Privateは他人からのリポジトリの見え方を選択する部分です。Publicにすると全世界に公開されますし、Privateは自分(と招待した人)しか見ることが出来ません。
