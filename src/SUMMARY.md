@@ -38,5 +38,5 @@
   - [Git概要](./git/02_git_summary.md)
   - [初めてのコミット](./git/03_first_git_commit.md)
   - [初めてのプッシュ](./git/04_first_github_push.md)
-  - [クローン](./git/06_clone.md)
   - [ブランチ](./git/05_branch.md)
+  - [クローン](./git/06_clone.md)
