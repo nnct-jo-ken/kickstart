@@ -33,6 +33,11 @@
 
 - [サンプルプログラム](ProcessingSample/all.md)
 
+- [組み込みRust入門](./embedded_rust/README.md)
+  - [Rasberry Pi Pico(Wokwi Simulator)で始める組み込みRust入門](./embedded_rust/wokwi_raspico/01_setup.md)
+    - [ボタンを押したときにLEDを光らせよう](./embedded_rust/wokwi_raspico/02_led_button.md)
+  - [Rasberry Pi Pico（実機）で始める組み込みRust入門](./embedded_rust/raspico/01_setup.md)
+
 - [Git / GitHub講座](./git/README.md)
   - [Git / GitHubを始める準備](./git/01_setup.md)
   - [Git概要](./git/02_git_summary.md)
